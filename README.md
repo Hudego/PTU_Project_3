@@ -155,6 +155,9 @@ L'objectif pour nous est de trouver un score qui permet d'éviter les régions d
 
 **Modules Utilisés:**
 
+- **requests** (v2.31.0) : Permet d'effectuer des requêtes HTTP (GET, POST, etc.) pour interagir avec des APIs ou récupérer des données en ligne.
+- **pandas** (version 2.2.3). Ce module sert à manipuler, analyser et transformer facilement des données.
+
 
 **Conclusion :**  
 Ce programme fournit une base solide pour l’analyse des fragments de protéines. Cependant, il nécessite une étape supplémentaire pour vérifier la qualité des fragments générés, en particulier pour confirmer leur pertinence par rapport aux domaines WD.  
@@ -189,8 +192,12 @@ Les résultats des superpositions étaient imparfaits et inutilisables pour l’
 - Une distribution incohérente des alignements a été observée.
 
 **Modules Utilisés:**
-
-- **requests** (v2.31.0) : Permet d'effectuer des requêtes HTTP (GET, POST, etc.) pour interagir avec des APIs ou récupérer des données en ligne.
+- **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
+- **pymol** (v2.5.0) : API pour utiliser PyMOL, un outil de visualisation et de manipulation de structures moléculaires.
+- **matplotlib.pyplot** (v3.8.0) : Création de graphiques et visualisations en Python.
+- **collections.defaultdict** (v3.10) : Permet de créer des dictionnaires avec des valeurs par défaut.
+- **concurrent.futures.ThreadPoolExecutor** (v3.10) : Parallélisation des tâches pour améliorer les performances.
+- **tqdm** (v4.66.1) : Ajout d'une barre de progression pour suivre l'avancement des boucles.
 
 **Conclusion :**  
 Bien que l’approche semble prometteuse, les résultats sont trop aberrants pour être exploitables en l’état. Une nouvelle tentative avec un jeu de données plus homogène (les 256 protéines à domaine unique identifiées dans le bloc 2) pourrait améliorer la fiabilité des alignements et permettre une analyse plus pertinente.  
