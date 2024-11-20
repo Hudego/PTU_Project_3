@@ -118,14 +118,12 @@ Protéine exclue : **DMX** (absente du fichier Excel et non prédite par AlphaFo
 Les bêta-propellers les plus communs contiennent généralement **7 ou 8 blades**.  
 Source : Jain BP, Pandey S. *WD40 Repeat Proteins: Signalling Scaffold with Diverse Functions*. *Protein J.* 2018 Oct;37(5):391-406. doi: 10.1007/s10930-018-9785-7. PMID: 30069656.  
 
-**Remarques supplémentaires :**  
-Après vérification avec AlphaFold, les protéines mal annotées (oubli de repeats) semblent toujours contenir un seul domaine.  
 
 **Nouveau script Python (3.12.7) :**  
 ![image](https://github.com/user-attachments/assets/df5760b9-186e-4f6d-b2a8-29ad7dc8482c)  
 
 **Conclusion :**  
-Ce script génère un fichier Excel contenant chaque protéine, son nombre de domaines, et son nombre moyen de repeats. Une moyenne située entre **6,5 et 7 repeats** par domaine semble juste et utilisable pour les analyses suivantes.  
+Ce script génère un fichier Excel contenant chaque protéine, son nombre de domaines, et son nombre moyen de repeats. Une moyenne située entre **6,5 et 7 repeats** par domaine semble juste et utilisable pour les analyses suivantes. Comme notre premier script nous indiquait plutôt une moyenne de 7 repeats et que la recherche bibliographique va dans ce sens également, on décide de partir sur une moyenne finale de **7 repeats par domaine WD.**
 
 **Personne ayant travaillé sur le bloc :** Hugo Mutschler, 28-31 octobre 2024  
 
@@ -148,7 +146,12 @@ Récupérer les structures prédites par AlphaFold des protéines ayant un domai
 ![Script Fragmentation 2](https://github.com/user-attachments/assets/6502bd81-e68b-424e-9f7a-3d75920f37e4)  
 
 **Résultats observés :**  
-Le programme a permis de générer un total de **2551 fragments** à partir de 280 protéines. Chaque fragment a été sauvegardé dans un fichier individuel, prêt pour une analyse ultérieure.  
+Le programme a permis de générer un total de **2551 fragments** à partir de 280 protéines. Chaque fragment a été sauvegardé dans un fichier individuel, prêt pour une analyse ultérieure. 
+
+**Informations supplémentaires:**
+Pour découper les fragments, on a choisi d'utiliser un seuil (treshold) de 70 pour le score pLDDT (Predicted Local Distance Difference Test). Ce score allant de 0 à 100 évalue la confiance de la prédiction d'alphafold au niveua résiduel. A partir de 70, on estime qu'on a une bonne confiance et que la structure est probable.
+
+L'objectif pour nous est de trouver un score qui permet d'éviter les régions désordonnées (score trop faible) mais garder en compte un certains nombres de régions qui pourraient être exclus si on choisis un seuil trop élevé. (par exemple, un seuil de 90 pourrait exclure des régions qui sont pourtant pertinentes pour nous.)
 
 **Conclusion :**  
 Ce programme fournit une base solide pour l’analyse des fragments de protéines. Cependant, il nécessite une étape supplémentaire pour vérifier la qualité des fragments générés, en particulier pour confirmer leur pertinence par rapport aux domaines WD.  
