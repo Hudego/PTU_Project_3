@@ -173,7 +173,7 @@ Superposer les fragments obtenus sur un modèle de beta-propeller afin de confir
 
 **Méthode :**  
 1. **Préparation des outils :**  
-   - Choix d’un modèle de beta-propeller à 7 blades (moyenne obtenue dans le bloc 2).  
+   - Choix d’un modèle de beta-propeller à 7 blades (moyenne obtenue dans le bloc 2). On décide d'utiliser la protéine B2J0I0 et son domaine WD 7bid.
    - Installation et configuration de PyMol avec Conda (version 24.1.2).  
 2. **Automatisation de la superposition :**  
    - Écriture d’un script Python pour superposer automatiquement les fragments sur le modèle via PyMol.  
