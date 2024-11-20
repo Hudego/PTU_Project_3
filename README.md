@@ -41,7 +41,7 @@ Identifier les protéines possédant plusieurs domaines WD pour ajuster le calcu
 **Méthode :**  
 - Visualisation des protéines mal annotées à l'aide du schéma des 280 protéines (*WD_map.png*).  
 - Visualisation des structures 3D de certaines protéines via AlphaFold pour vérifier le nombre de domaines WD (observation des structures en forme de "donuts"). Vérification des protéines semblant mal annotées avec moins de 7 repeats et de celles ayant plusieurs domaines (+ de 8 repeats).  
-- Création d’une liste de protéines à plusieurs domaines basée sur les annotations UniProt et la visualisation des structures. Par souci d'efficacité, nous supposons que les familles de protéines similaires ont le même nombre de domaines (hypothèse fréquemment vérifiée).  
+- Création d’une liste de protéines à plusieurs domaines basée sur les annotations UniProt et la visualisation des structures. Par souci d'efficacité, nous supposons que les familles de protéines similaires ont le même nombre de domaines.
 - Recherche bibliographique pour affiner le résultat attendu concernant le nombre de repeats par domaine.  
 - Création d’un nouveau script Python prenant en compte les protéines avec plusieurs domaines WD. Le script génère un fichier contenant le nom des protéines, leur nombre de domaines, et leur nombre moyen de repeats WD.  
 
