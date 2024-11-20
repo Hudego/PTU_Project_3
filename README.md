@@ -102,7 +102,7 @@ Ces informations seront utilisés lors du prochain script pour faire une moyenne
 - WDR27 : 2 domaines  
 - WDR11 : 2 domaines  
 
-Protéine exclue : **DMX** (absente du fichier Excel et non prédite par AlphaFold).  
+Protéine exclue : **DMX** (absente du fichier Excel et non prédite par AlphaFold).  Cela indique certainement une protéine fragmentée.
 
 **Nouveau calcul de la moyenne :**  
 - Données UniProt et fichier Excel : **2131 repeats WD**  
