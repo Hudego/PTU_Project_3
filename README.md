@@ -19,6 +19,8 @@ Estimer le nombre moyen de repeats WD par protéine dans les données disponible
 **Remarque :**  
 Pour exécuter le programme, le fichier Excel et le script doivent se trouver dans le même dossier. J'ai utilisé Visual Studio Code (version 1.95.1) pour exécuter mon script Python.
 
+On utilise le module pandas (version 2.2.3). Ce module sert à manipuler, analyser et transformer facilement des données.
+
 **Résultats observés :**  
 Avec ce script, nous avons trié un certain nombre de protéines que nous avons retirées pour calculer la moyenne. On obtient alors une moyenne de **7 repeats** par domaine WD, après avoir filtré un total de 66 protéines.  
 
@@ -42,6 +44,37 @@ Identifier les protéines possédant plusieurs domaines WD pour ajuster le calcu
 - Création d’une liste de protéines à plusieurs domaines basée sur les annotations UniProt et la visualisation des structures. Par souci d'efficacité, nous supposons que les familles de protéines similaires ont le même nombre de domaines (hypothèse fréquemment vérifiée).  
 - Recherche bibliographique pour affiner le résultat attendu concernant le nombre de repeats par domaine.  
 - Création d’un nouveau script Python prenant en compte les protéines avec plusieurs domaines WD. Le script génère un fichier contenant le nom des protéines, leur nombre de domaines, et leur nombre moyen de repeats WD.  
+
+**Liste des protéines mal annotés avec des oublis de repeats (Visualisation WD_map.png):**
+- **BCAS3**
+- WDR93
+- VPS8
+- **NBEL1**
+- WDCP
+- DC4L2
+- DCAF4
+- FRITZ
+- RIC1
+- NBAS
+- **AMRA1**
+- RFWD3
+- **PAN2**
+- DNAI3
+- DC211
+- DCAF1
+- **TLE7**
+- DC211
+- DCAF1
+- TLE7
+- DC212
+- WDFY3
+- NBEA
+
+En vérifiant manuellement (visualisation alphafold), on se rend compte que la plupart des protéines mal annotés de cette liste sont composé d'un seul domaine avec 7 repeats. Les protéines listés en **gras** ont été vérifié manuellement et contiennent bien 7 repeats.
+
+Ces informations seront utilisés lors du prochain script pour faire une moyenne d'avantage correct.
+
+
 
 **Liste des protéines avec plusieurs domaines (visualisation AlphaFold) :**  
 - EMAL5, EMAL6 : 6 domaines (x2)  
