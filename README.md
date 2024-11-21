@@ -176,7 +176,7 @@ Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
 
 -Alignement fragment 3: RMSD 3.103
 
-**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler (20-21 novembre 2024)
+**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024)
 
 ---
 
