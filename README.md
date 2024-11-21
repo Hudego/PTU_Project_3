@@ -142,8 +142,7 @@ Récupérer les structures prédites par AlphaFold des protéines ayant un domai
 - Création de fichiers individuels pour chaque fragment généré.
 
 **Script Python utilisé (3.12.7) :**  
-![Script Fragmentation 1](https://github.com/user-attachments/assets/0baa9b78-2e64-4ebe-834f-0cbea5e472e8)  
-![Script Fragmentation 2](https://github.com/user-attachments/assets/6502bd81-e68b-424e-9f7a-3d75920f37e4)  
+
 
 **Résultats observés :**  
 Le programme a permis de générer un total de **2551 fragments** à partir de 280 protéines. Chaque fragment a été sauvegardé dans un fichier individuel, prêt pour une analyse ultérieure. 
@@ -183,8 +182,7 @@ Superposer les fragments obtenus sur un modèle de beta-propeller afin de confir
    - Création d’un graphique représentant le nombre de fragments bien superposés par protéine.  
 
 **Script Python utilisé (3.12.7) :**  
-![Script Superposition 1](https://github.com/user-attachments/assets/4aa216b7-ee49-4119-8260-aa82bb46e4ff)  
-![Script Superposition 2](https://github.com/user-attachments/assets/786f3b9d-30e1-406a-86fc-358270ca7225)  
+  
 
 **Résultats observés :**  
 Les résultats des superpositions étaient imparfaits et inutilisables pour l’analyse finale :  
