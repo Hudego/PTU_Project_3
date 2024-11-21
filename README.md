@@ -159,9 +159,23 @@ L'objectif pour nous est de trouver un score qui permet d'éviter les régions d
 
 
 **Conclusion :**  
-Ce programme fournit une base solide pour l’analyse des fragments de protéines. Cependant, il nécessite une étape supplémentaire pour vérifier la qualité des fragments générés, en particulier pour confirmer leur pertinence par rapport aux domaines WD.  
+Ce programme fournit une base solide pour l’analyse des fragments de protéines. Cependant, il nécessite une étape supplémentaire pour vérifier la qualité des fragments générés, en particulier pour confirmer leur pertinence par rapport aux domaines WD. 
 
-**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024)  
+**Verification des fragments:**
+Pour avoir une première évaluation des fragments générés par notre script, nous avons decidé de superposer les 3 premiers fragments générés de notre liste (protéine A0A1W2PR48) avec notre domaine WD de reference (Protéine B2J0I0 et son domaine WD 7bid.)
+
+L'allignement semble correct dans l'ensemble et on observe pour les 3 fragments des valeurs assez faible de RMSD indiquant une bonne superposition.
+
+Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
+![Alligement entre domaine Wd 7bid et trois fragment](https://github.com/user-attachments/assets/1312043b-51e2-496e-b4fc-659e9499fc76)
+
+-Alignement fragment 1: RMSD 1.399
+
+-Alignement fragment 2: RMSD 2.276
+
+-Alignement fragment 3: RMSD 3.103
+
+**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler (20-21 novembre 2024)
 
 ---
 
