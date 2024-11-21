@@ -36,7 +36,7 @@ def calculer_rmsd(fragment, longueur_aa_min):
         # Si la longueur est insuffisante, on retourne None pour signaler l'absence d'alignement
         return None, nom_fragment
 
-def superposer_et_graphique_rmsd(modele, dossier_fragments, seuil_rmsd=1.0, longueur_aa_min=50):
+def superposer_et_graphique_rmsd(modele, dossier_fragments, seuil_rmsd=2.0, longueur_aa_min=40):
     cmd.load(modele, "modele_base")
     fragments_par_proteine = obtenir_fragments_depuis_dossier(dossier_fragments)
     comptage_fragments = defaultdict(int)
