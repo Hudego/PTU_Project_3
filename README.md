@@ -233,10 +233,12 @@ Apres avoir superposé les fragments et obtenu un fichier contenant les differen
 Les resulats de l'annotation sont les suivant:
 ![image](https://github.com/user-attachments/assets/9bb737c9-fffc-4fe6-900e-89b55c09a7e5)
 
-**resultats**
+**resultats:**
+
 On remarque une region hyper representé entre la position N-terminale de la proteine et les position 500aa.
 
-**conclusion**
+**conclusion:**
+
 Apres avoir superposé et annoté les fragments aligné sur les sequences de leurs proteines on peut eventuellement supposé que le domaine WD se situe generalemnt dans la region N-Ter des proteines, cependant l'analyse n'est pas exhaustive et necessite des amelioration comme tenir en compte de la taille de chauqe proteine differement.
 
 
