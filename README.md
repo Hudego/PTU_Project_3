@@ -217,13 +217,13 @@ En bas à droite, on observe tout les fragments qui se sont mal alignés. En th�
 Ici, on observe que la frontière n'est pas clairement définie. Pour ce faire, on va revenir en arrière et essayer de modifier les paramètres du découpage des fragments pour avoir une moins grosse fragmentation.
 Nous allons essayer d'utiliser les paramètres suivants:
 
--Gap de 30 acide aminés max.
+-Gap de 20 acide aminés max. (En utilisant un gap de 30 acides aminés, il n'y a plus trop de fragmentation donc on prefere rester à 20).
 
 -pLDDT de 70 (deja le cas actuellement).
 
 -Supprimer les fragments de moins de 30aa de longs, ce qui ne suffit même pas pour un blade.
 
--Rajouter quelques protéines n'ayant pas de domaines WD pour avoir une meilleur visualisation de la frontière.
+-Rajouter quelques protéines n'ayant pas de domaines WD pour avoir une meilleur visualisation de la frontière. (~100 protéines)
 
 ![Scatterplot 30aa gap + random prot](https://github.com/user-attachments/assets/fa11f148-9f3e-4570-bb32-4e8249b6e8ea)
 
