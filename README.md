@@ -231,7 +231,7 @@ Nous allons essayer d'utiliser les paramètres suivants:
 **Conclusion :**  
 Bien que l’approche semble prometteuse, les résultats sont trop aberrants pour être exploitables en l’état. Une nouvelle tentative avec un jeu de données plus homogène (les 256 protéines à domaine unique identifiées dans le bloc 2) pourrait améliorer la fiabilité des alignements et permettre une analyse plus pertinente.  
 
-**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024)  
+**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (23-24 novembre 2024)
 
 ---
 
