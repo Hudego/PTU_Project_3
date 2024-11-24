@@ -210,135 +210,15 @@ On s'interesse ensuite aux fragments qui ont un RMSD faible et un nombre conséq
 
 ![Scatterplot aamin=50](https://github.com/user-attachments/assets/1d8bd05f-e7b3-46fe-b39d-6afa184c158d)
 
-**Fragments conformes aux critères (>= 400 atomes alignés, RMSD < 1.5) :**
-- O00628_fragment_2.pdb
-- O14727_fragment_9.pdb
-- O14775_fragment_4.pdb
-- O15143_fragment_1.pdb
-- O43172_fragment_9.pdb
-- O43660_fragment_3.pdb
-- O43815_fragment_13.pdb
-- O43815_fragment_14.pdb
-- O43818_fragment_3.pdb
-- O60336_fragment_6.pdb
-- O75037_fragment_31.pdb
-- O75529_fragment_10.pdb
-- O75530_fragment_1.pdb
-- O76071_fragment_1.pdb
-- O94967_fragment_19.pdb
-- P16520_fragment_1.pdb
-- P35606_fragment_1.pdb
-- P43034_fragment_3.pdb
-- P43034_fragment_4.pdb
-- P53621_fragment_1.pdb
-- P53621_fragment_2.pdb
-- P54198_fragment_2.pdb
-- P55735_fragment_1.pdb
-- P57737_fragment_4.pdb
-- P61964_fragment_1.pdb
-- P62873_fragment_1.pdb
-- P62879_fragment_1.pdb
-- P62879_fragment_2.pdb
-- P63244_fragment_1.pdb
-- P78406_fragment_1.pdb
-- Q04724_fragment_2.pdb
-- Q04725_fragment_5.pdb
-- Q04726_fragment_2.pdb
-- Q04727_fragment_2.pdb
-- Q05048_fragment_3.pdb
-- Q05BV3_fragment_5.pdb
-- Q09028_fragment_2.pdb
-- Q12770_fragment_28.pdb
-- Q12788_fragment_4.pdb
-- Q13033_fragment_8.pdb
-- Q13033_fragment_9.pdb
-- Q13112_fragment_3.pdb
-- Q13216_fragment_1.pdb
-- Q13347_fragment_1.pdb
-- Q13685_fragment_2.pdb
-- Q15269_fragment_4.pdb
-- Q15542_fragment_3.pdb
-- Q16576_fragment_4.pdb
-- Q2TAY7_fragment_9.pdb
-- Q5JTN6_fragment_1.pdb
-- Q5QP82_fragment_3.pdb
-- Q5TAQ9_fragment_2.pdb
-- Q64LD2_fragment_1.pdb
-- Q676U5_fragment_3.pdb
-- Q6IA86_fragment_2.pdb
-- Q6IA86_fragment_7.pdb
-- Q6PJI9_fragment_1.pdb
-- Q6Q0C0_fragment_3.pdb
-- Q6RI45_fragment_4.pdb
-- Q6ZMY6_fragment_1.pdb
-- Q7Z4S6_fragment_25.pdb
-- Q7Z5U6_fragment_1.pdb
-- Q86TI4_fragment_1.pdb
-- Q86VZ2_fragment_1.pdb
-- Q86Y33_fragment_4.pdb
-- Q86Y33_fragment_5.pdb
-- Q8IWA0_fragment_3.pdb
-- Q8IWB7_fragment_1.pdb
-- Q8IZU2_fragment_3.pdb
-- Q8N0X2_fragment_8.pdb
-- Q8N157_fragment_16.pdb
-- Q8N1V2_fragment_1.pdb
-- Q8N5D0_fragment_2.pdb
-- Q8N9V3_fragment_1.pdb
-- Q8NA23_fragment_1.pdb
-- Q8NA75_fragment_11.pdb
-- Q8NAA4_fragment_4.pdb
-- Q8NBT0_fragment_1.pdb
-- Q8NFH3_fragment_3.pdb
-- Q8NHY2_fragment_6.pdb
-- Q8TBY9_fragment_8.pdb
-- Q8TC44_fragment_2.pdb
-- Q8TEB1_fragment_6.pdb
-- Q8TED0_fragment_2.pdb
-- Q8WWQ0_fragment_11.pdb
-- Q8WWQ0_fragment_8.pdb
-- Q92466_fragment_1.pdb
-- Q92636_fragment_8.pdb
-- Q92636_fragment_9.pdb
-- Q92747_fragment_2.pdb
-- Q969X6_fragment_2.pdb
-- Q96DI7_fragment_2.pdb
-- Q96DN5_fragment_3.pdb
-- Q96EE3_fragment_2.pdb
-- Q96EX3_fragment_4.pdb
-- Q96JK2_fragment_1.pdb
-- Q96RY7_fragment_2.pdb
-- Q96S15_fragment_2.pdb
-- Q9BQA1_fragment_1.pdb
-- Q9BRP4_fragment_1.pdb
-- Q9BRX9_fragment_3.pdb
-- Q9BVC4_fragment_1.pdb
-- Q9BYB4_fragment_4.pdb
-- Q9C0J8_fragment_1.pdb
-- Q9GZL7_fragment_1.pdb
-- Q9GZS3_fragment_1.pdb
-- Q9H2Y7_fragment_8.pdb
-- Q9HAV0_fragment_1.pdb
-- Q9HAV0_fragment_2.pdb
-- Q9HBG6_fragment_1.pdb
-- Q9NNW5_fragment_6.pdb
-- Q9NRL3_fragment_6.pdb
-- Q9NV06_fragment_3.pdb
-- Q9NYS7_fragment_5.pdb
-- Q9NZJ0_fragment_7.pdb
-- Q9P2H3_fragment_2.pdb
-- Q9UKB1_fragment_3.pdb
-- Q9UKT8_fragment_3.pdb
-- Q9UM11_fragment_7.pdb
-- Q9UMS4_fragment_4.pdb
-- Q9UNX4_fragment_4.pdb
-- Q9Y263_fragment_2.pdb
-- Q9Y263_fragment_4.pdb
-- Q9Y297_fragment_3.pdb
-- Q9Y2I8_fragment_3.pdb
-- Q9Y5J1_fragment_11.pdb
-- Q9Y6I7_fragment_4.pdb
+**Observations:**
 
+En bas à droite, on observe tout les fragments qui se sont mal alignés. En théorie, on devrait observer une zone en haut au miieu qui correspond aux fragments avec une bonne superposition qui devraient donc en théorie contenir les domaines WD (superposition avec notre domaine de reference). Cela devrait nous permettre d'identifier les fragments de chaque protéines contenant le domaine WD.
+
+Ici, on observe que la frontière n'est pas clairement définie. Pour ce faire, on va revenir en arrière et essayer de modifier les paramètres du découpage des fragments pour avoir une moins grosse fragmentation.
+Nous allons essayer d'utiliser les paramètres suivants:
+-Gap de 30 acide aminés max
+-pLDDT de 70 (deja le cas actuellement)
+-Supprimer les fragments de moins de 30aa de longs, ce qui ne suffit même pas pour un blade.
 
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
