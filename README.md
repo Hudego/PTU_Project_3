@@ -216,9 +216,14 @@ En bas à droite, on observe tout les fragments qui se sont mal alignés. En th�
 
 Ici, on observe que la frontière n'est pas clairement définie. Pour ce faire, on va revenir en arrière et essayer de modifier les paramètres du découpage des fragments pour avoir une moins grosse fragmentation.
 Nous allons essayer d'utiliser les paramètres suivants:
--Gap de 30 acide aminés max
--pLDDT de 70 (deja le cas actuellement)
+
+-Gap de 30 acide aminés max.
+
+-pLDDT de 70 (deja le cas actuellement).
+
 -Supprimer les fragments de moins de 30aa de longs, ce qui ne suffit même pas pour un blade.
+
+-Rajouter quelques protéines n'ayant pas de domaines WD pour avoir une meilleur visualisation de la frontière.
 
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
