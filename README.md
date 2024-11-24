@@ -141,7 +141,7 @@ Récupérer les structures prédites par AlphaFold des protéines ayant un domai
 - Fragmentation des structures en fonction des valeurs de PLDDT pour générer des fragments de haute qualité.  
 - Création de fichiers individuels pour chaque fragment généré.
 
-**Script Python utilisé (3.12.7) :**  
+**Script Python utilisé (3.12.7) : Fragments_WD.py**  
 
 
 **Résultats observés :**  
@@ -176,7 +176,19 @@ Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
 
 -Alignement fragment 3: RMSD 3.103
 
-**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024)
+**Amelioration du systeme de fragmentation des proteines predites**
+
+Pour ameliorer la fragmentation et reduire le temps de calcul il a fallu rajouter certaines contraintes au programme, la contrainte principale etant celle du plddt qui ne doit pas etre inferieur à 70, ensuite pour que un fragments puisse etre comptabilisé il lui faut au minimum 9 aa qui se suivent avec un score PLDDT>70, ensuite une marge d"erreur de 5aa est permise pour eviter de couper le fragments a cause de quelques acides aminé negligables, pour eviter de prendre en compte certaines region bien conservé qui peuvent posseder un score superier a 70, nous avons decider de garder des fragments qui ont au minimum 4 aa avec un plddt>90 ( ceci a été decidé apres avoir constaté que dans le domaine WD il y avait une presence de feuillet Beta qui avait un trés grand score).
+
+Pour tester la qualité de l'amelioration on va re-aligner les fragments de la proteine A0A1W2PR48 avec le 7bid, dans un premier temps on a reussi a diminuer le nombre de fragments à 2, et pour des scores de RMSD bien meilleurs:
+
+Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
+
+- Alignement fragment 1: RMSD 0,867
+
+- Alignement fragment 2: RMSD 2.267
+
+**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024), Amelioration de la fragmentation des proteines realisé par Aiman LIMANI ( 22-24  novembre 2024).
 
 ---
 
