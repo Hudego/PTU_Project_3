@@ -232,6 +232,14 @@ Nous allons essayer d'utiliser les paramètres suivants:
 
 En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centaine de protéines supplémentaires n'ayant pas de domaines WD, on obtient un graphique deja plus pertinent avec une séparation plus distincte. A présent, on va devoir identifier quels point correspondent à des superpostiions utilisables et pertinentes. Il faut définir la limite en regardant manuellement assez grossièrement et identifier la liste de fragments qui se superposent bien à notre domaine de référence.
 
+**Modification des paramètres de fragmentations:**
+
+-En utilisant un gap de 30 acide aminés pour la fragmentation, on obtient: **467 fragments**
+
+-En utilisant un gap de 20 acide aminés pour la fragmentation, on obtient: **547 fragments**
+
+-En utilsant un gap de 30 acides aminés et en ajoutant des protéines externes qui n'ont pas de domaines WD, on se retrouve au final avec: **641 fragments**
+
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
 - **pymol** (v2.5.0) : API pour utiliser PyMOL, un outil de visualisation et de manipulation de structures moléculaires.
