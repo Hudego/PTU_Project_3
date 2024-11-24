@@ -182,7 +182,9 @@ Pour ameliorer la fragmentation et reduire le temps de calcul il a fallu rajoute
 
 Pour tester la qualité de l'amelioration on va re-aligner les fragments de la proteine A0A1W2PR48 avec le 7bid, dans un premier temps on a reussi a diminuer le nombre de fragments à 2, et pour des scores de RMSD bien meilleurs:
 
-Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
+Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3):
+![image](https://github.com/user-attachments/assets/051586c6-24cf-48f3-98ad-d67fec7c27cd)
+
 
 - Alignement fragment 1: RMSD 0,867
 
@@ -208,7 +210,7 @@ Superposer les fragments obtenus sur un modèle de beta-propeller afin de confir
    - Identification des fragments bien alignés avec un faible RMSD.  
    - Création d’un graphique représentant le nombre de fragments bien superposés par protéine.  
 
-**Script Python utilisé (3.12.7) :**  
+**Script Python utilisé (3.12.7) :Superposition fragments-Modele.py**   
   
 
 **Résultats observés :**  
@@ -216,6 +218,27 @@ Les résultats des superpositions étaient imparfaits et inutilisables pour l’
 - Certaines protéines avaient seulement 1 ou 2 fragments alignés correctement, tandis que d’autres en avaient jusqu’à 50.  
 - Une distribution incohérente des alignements a été observée.
 ![image](https://github.com/user-attachments/assets/48fe7a86-f467-4096-bda4-005e297c85f7)
+
+
+**Amelioration de la superposition des fragments au modele**
+
+L'amelioration de la fragmentation des proteines on permis une meilleur superposition generale, pour ameliorer encore mieux la superposition a son tour on a defini un taille minimale du fragment a superposer et augmenter le RMSD a 2,5 ( on pourrait encore l'augmenter d'aventage). Au lieu d'essayer de superposer touts les fragments de maniere parfaite pour toutes les proteines nous avons decider de compter sur la qualité que sur la quantité, pour cela nous avons regroupé les proteines en deux fichier distinct apres superposition, le premier regroupe les proteines qui ont au moins un fragments avec un RMSD <2,5, et un fichier qui regroupe des proteines qui n'ont aucun fragment avec un faible RMSD, cette sepration nous permet donc de travailler de maniere plus specfique et precise, les proteines qui n'ont pas de fragment avec un bon rmsd pourrait etre analysé manuellement.
+
+**Script Python utilisé (3.12.7) :Amelioration superposition.py**  
+
+**Annotation des domaines en fonction des fragments aligné**
+
+Apres avoir superposé les fragments et obtenu un fichier contenant les differents proteines et leurs fragments RMSD<2,5 nous avons pu alors essayer de regarder a quoi correspond le premier et le dernier acide aminé dans le fichier PDB de chaque fragment RMSD<2,5 pour savoir quelle regions ils couvrent sur leur proteine.On a ensuite essayé de contruire un graphique de "couverture de fragments".
+
+Les resulats de l'annotation sont les suivant:
+![image](https://github.com/user-attachments/assets/9bb737c9-fffc-4fe6-900e-89b55c09a7e5)
+
+**resultats**
+On remarque une region hyper representé entre la position N-terminale de la proteine et les position 500aa.
+
+**conclusion**
+Apres avoir superposé et annoté les fragments aligné sur les sequences de leurs proteines on peut eventuellement supposé que le domaine WD se situe generalemnt dans la region N-Ter des proteines, cependant l'analyse n'est pas exhaustive et necessite des amelioration comme tenir en compte de la taille de chauqe proteine differement.
+
 
 On s'interesse ensuite aux fragments qui ont un RMSD faible et un nombre conséquent d'atomes alignés. Pour ce faire, on modifie legerement notre script d'alignement en utilisant matplotlib pour générer un Scatterplot et calculer le RMSD avec Pymol. On utilise le log(RMSD) pour une meilleur visualisation des points. Dans cet exemple, on garde uniquement les fragments avec une longueur minimal de 50 acides aminés.
 
@@ -263,7 +286,7 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 **Conclusion :**  
 Bien que l’approche semble prometteuse, les résultats sont trop aberrants pour être exploitables en l’état. Une nouvelle tentative avec un jeu de données plus homogène (les 256 protéines à domaine unique identifiées dans le bloc 2) pourrait améliorer la fiabilité des alignements et permettre une analyse plus pertinente.  
 
-**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (23-24 novembre 2024)
+**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (23-24 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024)
 
 ---
 
