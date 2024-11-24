@@ -238,7 +238,7 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 
 -En utilisant un gap de 20 acide aminés pour la fragmentation, on obtient: **547 fragments**
 
--En utilsant un gap de 30 acides aminés et en ajoutant des protéines externes qui n'ont pas de domaines WD, on se retrouve au final avec: **641 fragments**
+-En utilsant un gap de 20 acides aminés et en ajoutant des protéines externes qui n'ont pas de domaines WD, on se retrouve au final avec: **641 fragments**. C'est cette methode qu'on a utilisé pour générer notre Scatterplot.
 
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
