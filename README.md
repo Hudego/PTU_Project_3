@@ -204,6 +204,8 @@ Les résultats des superpositions étaient imparfaits et inutilisables pour l’
 - Certaines protéines avaient seulement 1 ou 2 fragments alignés correctement, tandis que d’autres en avaient jusqu’à 50.  
 - Une distribution incohérente des alignements a été observée.
 ![image](https://github.com/user-attachments/assets/48fe7a86-f467-4096-bda4-005e297c85f7)
+![Scatterplot aamin=50](https://github.com/user-attachments/assets/1d8bd05f-e7b3-46fe-b39d-6afa184c158d)
+
 
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
