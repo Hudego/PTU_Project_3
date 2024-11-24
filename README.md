@@ -225,6 +225,13 @@ Nous allons essayer d'utiliser les paramètres suivants:
 
 -Rajouter quelques protéines n'ayant pas de domaines WD pour avoir une meilleur visualisation de la frontière.
 
+![Scatterplot 30aa gap + random prot](https://github.com/user-attachments/assets/fa11f148-9f3e-4570-bb32-4e8249b6e8ea)
+
+
+**Observations:**
+
+En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centaine de protéines supplémentaires n'ayant pas de domaines WD, on obtient un graphique deja plus pertinent avec une séparation plus distincte. A présent, on va devoir identifier quels point correspondent à des superpostiions utilisables et pertinentes. Il faut définir la limite en regardant manuellement assez grossièrement et identifier la liste de fragments qui se superposent bien à notre domaine de référence.
+
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
 - **pymol** (v2.5.0) : API pour utiliser PyMOL, un outil de visualisation et de manipulation de structures moléculaires.
