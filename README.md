@@ -531,6 +531,9 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 - Q9Y5J1_fragment_1.pdb
 - Q9Y6I7_fragment_1.pdb
 
+  
+On se retrouve donc avec **372 fragments** dans cette liste.
+
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
 - **pymol** (v2.5.0) : API pour utiliser PyMOL, un outil de visualisation et de manipulation de structures moléculaires.
