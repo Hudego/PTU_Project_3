@@ -534,7 +534,7 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 
 Pour définir la limite des fragments utilisable, nous avons regarder manuellement en superposant plusieurs fragments avec Pymol pour voir jusqu'ou les résultats étaient pertinent. Cette "frontière" pourrait encore être améliorer en utilisant un moyen plus automatique.
   
-On se retrouve donc avec **372 fragments** dans cette liste.
+On se retrouve donc avec **248 fragments** dans cette liste.
 
 Attention, les protéines contenant plusieurs domaines WD n'ont pas été prise en compte car Pymol va superposer uniquement un seul domaine sur les deux, et donc obtenir un mauvais RMSD. Comme il s'agit de cas particuliers et qu'ils sont assez compliqué à gérer, on décide de ne pas les prendres en compte pour la suite.
 
