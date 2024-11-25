@@ -531,6 +531,8 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 - Q9Y5J1_fragment_1.pdb
 - Q9Y6I7_fragment_1.pdb
 
+
+Pour définir la limite des fragments utilisable, nous avons regarder manuellement en superposant plusieurs fragments avec Pymol pour voir jusqu'ou les résultats étaient pertinent. Cette "frontière" pourrait encore être améliorer en utilisant un moyen plus automatique.
   
 On se retrouve donc avec **372 fragments** dans cette liste.
 
