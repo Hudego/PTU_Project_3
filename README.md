@@ -534,6 +534,8 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
   
 On se retrouve donc avec **372 fragments** dans cette liste.
 
+Attention, les protéines contenant plusieurs domaines WD n'ont pas été prise en compte car Pymol va superposer uniquement un seul domaine sur les deux, et donc obtenir un mauvais RMSD. Comme il s'agit de cas particuliers et qu'ils sont assez compliqué à gérer, on décide de ne pas les prendres en compte pour la suite.
+
 **Modules Utilisés:**
 - **os** (v3.10) : Gestion des interactions avec le système de fichiers (parcours de dossiers, manipulation de chemins).
 - **pymol** (v2.5.0) : API pour utiliser PyMOL, un outil de visualisation et de manipulation de structures moléculaires.
