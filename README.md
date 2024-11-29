@@ -11,8 +11,6 @@ Scripts/ : Contient les scripts Python du projet.
 
 Resultats/ : Résultats générés après l'exécution des scripts.
 
-docs/ : Documentation et rapports associés au projet.
-
 ---
 
 ## **Bloc 1 : Prise en main et calcul du nombre moyen de repeats WD par protéines**
