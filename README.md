@@ -1,5 +1,10 @@
 # PTU_Project_3
 
+**Cahier de laboratoire présenté par**  
+*Hugo MUTSCHLER*, *Aiman LIMANI* et *Ismail UNLU*
+
+---
+
 ## **Bloc 1 : Prise en main et calcul du nombre moyen de repeats WD par protéines**
 
 **Objectif :**  
