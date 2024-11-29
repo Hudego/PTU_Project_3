@@ -5,7 +5,7 @@
 
 **Structure du Projet**
 
-Fichiers/: Contient les fichiers necessaires au projet, à l'utilisation des scripts, ...
+Fichiers/ : Contient les fichiers necessaires au projet, à l'utilisation des scripts, ...
 
 Scripts/ : Contient les scripts Python du projet.
 
