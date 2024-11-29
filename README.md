@@ -133,7 +133,7 @@ Source : Jain BP, Pandey S. *WD40 Repeat Proteins: Signalling Scaffold with Dive
 
 
 **Nouveau script Python (3.12.7) :**  
-![image](https://github.com/user-attachments/assets/df5760b9-186e-4f6d-b2a8-29ad7dc8482c)  
+![image](https://github.com/user-attachments/assets/02398155-75b6-4593-9460-b0901c60f677)
 
 **Conclusion :**  
 Ce script génère un fichier Excel contenant chaque protéine, son nombre de domaines, et son nombre moyen de repeats. Une moyenne située entre **6,5 et 7 repeats** par domaine semble juste et utilisable pour les analyses suivantes. Comme notre premier script nous indiquait plutôt une moyenne de 7 repeats et que la recherche bibliographique va dans ce sens également, on décide de partir sur une moyenne finale de **7 repeats par domaine WD.**
