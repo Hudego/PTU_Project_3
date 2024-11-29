@@ -7,9 +7,9 @@
 
 Fichiers/: Contient les fichiers necessaires au projet, à l'utilisation des scripts, ...
 
-scripts/ : Contient les scripts Python du projet.
+Scripts/ : Contient les scripts Python du projet.
 
-resultats/ : Résultats générés après l'exécution des scripts.
+Resultats/ : Résultats générés après l'exécution des scripts.
 
 docs/ : Documentation et rapports associés au projet.
 
