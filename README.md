@@ -553,7 +553,7 @@ Bien que l’approche semble prometteuse, les résultats sont trop aberrants pou
 
 ---
 
-## **Bloc 5-6 : Alignement des séquences et proposition de nouvelles annotations**
+## **Bloc 5-6 : Alignement des séquences**
 
 **Objectif :**  
 Redéfinir les limites des repeats WD à l’aide d’un alignement de séquences et proposer de nouvelles annotations basées sur l’analyse des alignements et des structures.
@@ -575,7 +575,7 @@ Redéfinir les limites des repeats WD à l’aide d’un alignement de séquence
 L’identification de nouveaux motifs spécifiques aux repeats WD et une mise à jour des annotations existantes pour mieux refléter les données structurelles et séquentielles.  
 
 **Conclusion :**  
-Le travail est en cours. L’alignement des séquences et la proposition d’annotations nécessitent une validation supplémentaire pour s’assurer de leur pertinence.  
+Nous avons discuté avec le groupe 5, qui travaille également sur les repeats WD, et avons pu comparer certains de nos résultats avec les leurs. Ils avaient déjà tenté de réaliser un alignement de séquences, mais les résultats se sont avérés peu pertinents, et les alignements multiples étaient très difficiles à analyser. Par conséquent, nous avons décidé d’abandonner l’idée d’effectuer des alignements pour nous concentrer davantage sur les étapes de fragmentation et de superposition (blocs 3 et 4).
 
 **Personne ayant travaillé sur le bloc :** Ismail Unlu  
 
