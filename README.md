@@ -316,6 +316,13 @@ Attention, les protéines contenant plusieurs domaines WD n'ont pas été prise 
 - **concurrent.futures.ThreadPoolExecutor** (v3.10) : Parallélisation des tâches pour améliorer les performances.
 - **tqdm** (v4.66.1) : Ajout d'une barre de progression pour suivre l'avancement des boucles.
 
+**Superposition de nos fragments conformes à notre domaine de reference.**
+
+![image](https://github.com/user-attachments/assets/0a6e142a-83ef-4a40-8a51-2786772bdc5c)
+
+L'image complete est accessible dans nos dossiers.
+
+
 **Conclusion :**  
 Bien que l’approche semble prometteuse, les résultats sont trop aberrants pour être exploitables en l’état. Une nouvelle tentative avec un jeu de données plus homogène (les 256 protéines à domaine unique identifiées dans le bloc 2) pourrait améliorer la fiabilité des alignements et permettre une analyse plus pertinente.  
 
