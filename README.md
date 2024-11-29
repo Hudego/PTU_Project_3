@@ -40,7 +40,7 @@ Avec ce script, nous avons trié un certain nombre de protéines que nous avons 
 **Conclusion :**  
 La moyenne obtenue est cohérente car on s’attendait à un nombre de blades entre 4 et 8. Cependant, ce script ne prend pas en compte les protéines ayant plusieurs domaines WD (ce qui multiplie le nombre de repeats sans que ce soit une erreur). Par la suite, il faudra identifier manuellement les multi-domaines et calculer une moyenne basée sur le nombre total de domaines pour une estimation plus précise.  
 
-Je n’ai pas réussi à afficher le résultat dans des colonnes distinctes pour le fichier CSV. Par conséquent, je resterai sur un format Excel pour le prochain script pour éviter les problèmes de conversion.
+J'ai eu quelques soucis à afficher les résultats dans des colonnes distinctes pour le fichier CSV. Par conséquent, je resterai sur un format Excel pour le prochain script pour éviter les problèmes de conversion.
 
 **Personne ayant travaillé sur le bloc :** Hugo Mutschler, 20-21 octobre 2024  
 
