@@ -3,6 +3,17 @@
 **Cahier de laboratoire présenté par**  
 *Hugo MUTSCHLER*, *Aiman LIMANI* et *Ismail UNLU*
 
+**Structure du Projet**
+
+Fichiers/: Contient les fichiers necessaires au projet, à l'utilisation des scripts, ...
+
+scripts/ : Contient les scripts Python du projet.
+
+resultats/ : Résultats générés après l'exécution des scripts.
+
+docs/ : Documentation et rapports associés au projet.
+
+README.md : Présentation du projet et cahier de laboratoire.
 ---
 
 ## **Bloc 1 : Prise en main et calcul du nombre moyen de repeats WD par protéines**
