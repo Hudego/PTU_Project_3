@@ -13,7 +13,6 @@ resultats/ : Résultats générés après l'exécution des scripts.
 
 docs/ : Documentation et rapports associés au projet.
 
-README.md : Présentation du projet et cahier de laboratoire.
 ---
 
 ## **Bloc 1 : Prise en main et calcul du nombre moyen de repeats WD par protéines**
