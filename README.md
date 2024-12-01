@@ -320,7 +320,8 @@ Attention, les protéines contenant plusieurs domaines WD n'ont pas été prise 
 
 **Superposition de nos fragments conformes à notre domaine de reference.**
 
-![image](https://github.com/user-attachments/assets/0a6e142a-83ef-4a40-8a51-2786772bdc5c)
+![image](https://github.com/user-attachments/assets/f1d55104-44fa-4e1e-a97b-f688b57d71b4)
+
 
 L'image complete est accessible dans nos dossiers.
 
