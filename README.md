@@ -349,6 +349,25 @@ Le code python pour réalisé cette tache est le "statistiques_domaines.py"
 
 ![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
 
+Une fois que nous avons obtenu et analysé les differents domaines WD, nous allons ensuite essayer d'aligner l'ensemble des sequences proteiques a fin de relever les differentes regoins ou motifs conservé entre domaines. Nous allons dans un premier cas transformer les fichiers pdb en fichiers fasta, ces fichiers vont etre concatené pour etre utilisé avec MAFFT afin de realiser un alignement multiple. L'affichage de l'alignement sera fait sur Jalview.
+
+Dans un premier temps nous alons transformer les fichier PDB des differents domaines predis en fichier fasta.
+
+Le code python pour réalisé cette tache est  "pdb_fasta.py"
+
+Une fois le fichier fasta pour chaque proteine obtenu il va falloir concatener et reunier toutes les sequences dans un seul et meme fichier, ce fichier va etre ensuite donnée a MAFFT Online, l'utilisation du site MAFFT permet une meilleur familiarisation et est plus intuitif. Une fois le fichier avec les sequences concatené est televersé dans MAFFT nous allons avoir plusier resultats, il va faloir telechargé le fichier d'alignement pour le visualiser sur Jalview.
+
+Le code python pour réalisé cette tache est  "alignement.py"
+
+Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque plusieurs points interessants:
+
+![image](https://github.com/user-attachments/assets/98c9e252-2a4e-4d8c-88aa-56751fd73885)
+
+Nous pouvons voir sur l'ensemble de la sequence d'alignement plusieurs position ou la conservation des aa est tres fortes, les aa tres bien conservé sont les W et D qui des fois ont 90% de conservation
+
+**Personne ayant travaillé sur le bloc :** Aiman LIMANI
+
+
 ## **Bloc  : Alignement des séquences**
 
 **Objectif :**  
