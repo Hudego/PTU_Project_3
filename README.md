@@ -256,6 +256,7 @@ Les resulats de l'annotation sont les suivant:
 **Resultats:**
 
 On remarque une region hyper representé entre la position N-terminale de la proteine et les position 500aa.
+Voir fichier "image_position_1" pour une meilleur visibilité
 
 **Conclusion:**
 
@@ -332,8 +333,23 @@ A faire
 **Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (22-25 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024)
 
 ---
+## **Bloc 5 : Annotation des domaines complets predis par Alphafold **
 
-## **Bloc 5-6 : Alignement des séquences**
+A fin d'avoir un meilleur appercu est de meilleurs resultats une autre approche serait d'isoler directement le domaine WD entier de chaque proteine, ceci va nous eviter des erreurs comme la technique de fragmentation par PLDDT qui incorpore des regions non structuré indesiré. Le but principal est de telechargé toutes les proteines presentes dans le fichier excel, a l'aide de leur id uniprot alpha fold predis leurs strcuture individuelle, ensuite on va effectuer directement une superposition des strcutures predites sur le modele de WD domain 7bid, on va ensuite calculer la distance de touts les atome set supprimer tout ceux qui ont une distance superieur a 5 A° du modele, ceci va nous permettre d'avoir un WD domain nottoyé et complet.
+
+Le code python pour réalisé cette tache est le "Fragmentation_WD_domains_complets.py"
+
+Apres avoir obtenu des fragments des proteines contenat seulement les domains WD complets pour chaque proteine on va essayer de trouver leur position dans la sequence des proteines a fin de comprendre la ou les domaines sont situé.
+
+Le code python pour réalisé cette tache est le "Positionnement_des_domaines_2.py"
+
+Le positionnement des domaines nous permet d'obtenir plusieurs information tels que la position moyenne de l'acide aminé initial/final, la taille et la correlation (position debut/fin)
+
+Le code python pour réalisé cette tache est le "statistiques_domaines.py"
+
+![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
+
+## **Bloc  : Alignement des séquences**
 
 **Objectif :**  
 Redéfinir les limites des repeats WD à l’aide d’un alignement de séquences et proposer de nouvelles annotations basées sur l’analyse des alignements et des structures.
