@@ -51,7 +51,7 @@ J'ai eu quelques soucis à afficher les résultats dans des colonnes distinctes 
 ## **Bloc 2 : Identification des protéines avec plusieurs domaines WD et affinage de la moyenne**
 
 **Objectif :**  
-Identifier les protéines possédant plusieurs domaines WD pour ajuster le calcul de la moyenne et produire un script plus cohérent. Par la suite, l’objectif est de déterminer le nombre de domaines WD par protéines en utilisant cette moyenne.
+Identifier les protéines possédant plusieurs domaines WD pour ajuster le calcul de la moyenne et produire un script qui prends en compte d'avantages de protéines. Par la suite, l’objectif est de déterminer le nombre de domaines WD par protéines en utilisant cette moyenne.
 
 **Méthode :**  
 - Visualisation des protéines mal annotées à l'aide du schéma des 280 protéines (*WD_map.png*).  
@@ -159,16 +159,17 @@ Récupérer les structures prédites par AlphaFold des protéines ayant un domai
 **Script Python utilisé (3.12.7) : Fragments_WD.py**  
 
 
-**Résultats observés :**  
-
-Le programme a permis de générer un total de **2551 fragments** à partir de 280 protéines. Chaque fragment a été sauvegardé dans un fichier individuel, prêt pour une analyse ultérieure. 
-
-
 **Informations supplémentaires:**
 
 Pour découper les fragments, on a choisi d'utiliser un seuil (treshold) de 70 pour le score pLDDT (Predicted Local Distance Difference Test). Ce score allant de 0 à 100 évalue la confiance de la prédiction d'alphafold au niveau résiduel. A partir de 70, on estime qu'on a une bonne confiance et que la structure est probable.
 
 L'objectif pour nous est de trouver un score qui permet d'éviter les régions désordonnées (score trop faible) mais garder en compte un certains nombres de régions qui pourraient être exclus si on choisis un seuil trop élevé. (par exemple, un seuil de 90 pourrait exclure des régions qui sont pourtant pertinentes pour nous.)
+
+
+**Résultats observés :**  
+
+Le programme a permis de générer un total de **2551 fragments** à partir de 280 protéines. Chaque fragment a été sauvegardé dans un fichier individuel, prêt pour une analyse ultérieure. 
+
 
 
 **Modules Utilisés:**
