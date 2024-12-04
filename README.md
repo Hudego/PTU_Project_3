@@ -193,11 +193,11 @@ L'allignement semble correct dans l'ensemble et on observe pour les 3 fragments 
 Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
 ![Alligement entre domaine Wd 7bid et trois fragment](https://github.com/user-attachments/assets/1312043b-51e2-496e-b4fc-659e9499fc76)
 
--Alignement fragment 1: RMSD 1.399
+-Alignement fragment 1 (vert): RMSD 1.399
 
--Alignement fragment 2: RMSD 2.276
+-Alignement fragment 2 (jaune): RMSD 2.276
 
--Alignement fragment 3: RMSD 3.103
+-Alignement fragment 3 (cyan): RMSD 3.103
 
 **Amelioration du systeme de fragmentation des proteines predites**
 
