@@ -44,7 +44,7 @@ La moyenne obtenue est cohérente car on s’attendait à un nombre de blades en
 
 J'ai eu quelques soucis à afficher les résultats dans des colonnes distinctes pour le fichier CSV. Par conséquent, je resterai sur un format Excel pour le prochain script pour éviter les problèmes de conversion.
 
-**Personne ayant travaillé sur le bloc :** Hugo Mutschler, 20-21 octobre 2024  
+**Personne ayant travaillé sur le bloc :** Hugo Mutschler, 20-21 octobre 2024. Modifications et précision des resultats le 4-5 décembre 2024.
 
 ---
 
