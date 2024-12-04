@@ -22,7 +22,7 @@ Estimer le nombre moyen de repeats WD par protéine dans les données disponible
 - Utilisation des données UniProt pour récupérer le nombre total de repeats WD.  
 - Extraction des informations importantes dans le fichier Excel.  
 - Identification rapide des protéines à retirer pour le calcul (protéines trop grosses, nombre incohérent de repeats, etc.).  
-- Utilisation de pandas et écriture d’un script Python pour manipuler les données du fichier Excel *WD_extracted_data.xlsx* et filtrer les protéines en fonction de certains critères. Ainsi, on retire les protéines trop grosses (plus de 3000 acides aminés) et on ne garde que les protéines ayant entre 4 et 8 repeats WD.  
+- Utilisation de pandas et écriture d’un script Python pour manipuler les données du fichier Excel *WD_extracted_data.xlsx* et filtrer les protéines en fonction de certains critères. Ainsi, on retire les protéines trop grosses (plus de 3000 acides aminés) et on ne garde que les protéines ayant entre 4 et 8 repeats WD pour éviter de prendre en compte des protéines mal annotées dans notre moyenne. (A ce stade, on estime que les protéines avec un nombre supérieur a 8 ou inférieur a 4 sont mal annotés.) On retire les protéines trop grosses car on estime qu'elles peuvent inclure des erreurs d'annotation, comme des fusions de séquences ou des prévisions incorrectes de domaines. Ces erreurs faussent les statistiques en augmentant artificiellement le nombre moyen de WD repeats. De plus, ce genre de protéines est assez rare et atypique dans notre jeu de donnés (représente seulement 6 protéines.) Par soucis de simplification on choisi de ne pas les prendre en compte pour ce premier calcul.
 - Calculer une première moyenne sans prendre en compte les protéines avec plusieurs domaines.  
 
 **Script Python (3.12.7) :**  
@@ -35,7 +35,9 @@ Pour exécuter le programme, le fichier Excel et le script doivent se trouver da
 On utilise le module pandas (version 2.2.3). Ce module sert à manipuler, analyser et transformer facilement des données.
 
 **Résultats observés :**  
-Avec ce script, nous avons trié un certain nombre de protéines que nous avons retirées pour calculer la moyenne. On obtient alors une moyenne de **7 repeats** par domaine WD, après avoir filtré un total de 66 protéines.  
+Avec ce script, nous avons trié un certain nombre de protéines que nous avons retirées pour calculer la moyenne. On obtient alors une moyenne de **7 repeats** par domaine WD, après avoir filtré un total de 66 protéines. On se retrouve donc avec 280 - 66 = 214 protéines pour le calcul de cette moyenne. 
+
+Environ **23,57 %** des protéines ont été retirées après le filtrage
 
 **Conclusion :**  
 La moyenne obtenue est cohérente car on s’attendait à un nombre de blades entre 4 et 8. Cependant, ce script ne prend pas en compte les protéines ayant plusieurs domaines WD (ce qui multiplie le nombre de repeats sans que ce soit une erreur). Par la suite, il faudra identifier manuellement les multi-domaines et calculer une moyenne basée sur le nombre total de domaines pour une estimation plus précise.  
