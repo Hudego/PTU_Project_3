@@ -1,3 +1,6 @@
+"""
+essaie non réussi car pas de WD dans l'alignement Mafft
+"""
 from Bio.PDB import PDBParser
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
