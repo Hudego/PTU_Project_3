@@ -7,9 +7,9 @@ from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
 def obtenir_fragments_depuis_dossier(dossier):
-    """
-    Récupère tous les fichiers .pdb d'un dossier donné, en excluant les fichiers correspondant aux protéines entières.
-    """
+    
+    # Récupère tous les fichiers .pdb d'un dossier donné, en excluant les fichiers correspondant aux protéines entières.
+    
     fragments = []
     for fichier in os.listdir(dossier):
         if fichier.endswith('.pdb') and 'fragment' in fichier:  # Assurez-vous que 'fragment' est dans le nom du fichier
@@ -17,9 +17,9 @@ def obtenir_fragments_depuis_dossier(dossier):
     return fragments
 
 def calculer_rmsd_et_alignes(fragment, longueur_aa_min):
-    """
-    Calcule le RMSD et le nombre d'atomes alignés pour un fragment donné, seulement si sa longueur en acides aminés est suffisante.
-    """
+    
+    # Calcule le RMSD et le nombre d'atomes alignés pour un fragment donné, seulement si sa longueur en acides aminés est suffisante.
+    
     nom_fragment = os.path.basename(fragment).replace('.pdb', '')
     cmd.load(fragment, nom_fragment)
     
