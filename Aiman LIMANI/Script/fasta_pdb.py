@@ -3,15 +3,7 @@ import os
 import argparse
 
 def pdb_to_fasta(pdb_file):
-    """
-    Convertit un fichier PDB en séquence FASTA.
-    
-    Args:
-        pdb_file (str): Chemin vers le fichier PDB à convertir
-    
-    Returns:
-        str: Séquence au format FASTA
-    """
+
     # Initialiser le parser PDB
     parser = PDB.PDBParser(QUIET=True)
     
@@ -43,13 +35,7 @@ def pdb_to_fasta(pdb_file):
         return None
 
 def convert_multiple_pdbs(input_path, output_dir=None):
-    """
-    Convertit un ou plusieurs fichiers PDB en FASTA.
-    
-    Args:
-        input_path (str): Chemin vers un fichier PDB ou un répertoire contenant des PDB
-        output_dir (str, optional): Répertoire de sortie pour les fichiers FASTA
-    """
+
     # Créer le répertoire de sortie si non spécifié
     if output_dir is None:
         output_dir = os.path.dirname(input_path) or '.'
@@ -102,6 +88,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-# Exemple d'utilisation :
-# python convert_pdb_to_fasta.py chemin/vers/fichier.pdb
-# python convert_pdb_to_fasta.py chemin/vers/repertoire_pdb -o chemin/vers/repertoire_fasta
