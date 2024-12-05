@@ -1,0 +1,3 @@
+"""j'ai éssayé de réaliser l'aligenment avec les fragments néttoyés générés par aiman, par conversion des fichiers pdb en fasta puis procéder 
+avec mafft mais, malheureusement nous ne trouvons pas de motif WD (sûrement à cause d'une mauvaise conversion) (jalview 2.11.4.1) mais
+aiman a réussi à trouver la solution"""
