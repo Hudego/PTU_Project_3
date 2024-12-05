@@ -368,6 +368,8 @@ Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque
 
 Nous pouvons voir sur l'ensemble de la sequence d'alignement plusieurs position ou la conservation des aa est tres fortes, les aa tres bien conservé sont les W et D qui des fois ont 90% de conservation
 
+Logiciel utilisé : jalview (2.11.4.1)
+
 **Personne ayant travaillé sur le bloc :** Aiman LIMANI, Ismail UNLU(1-3 décembre 2024)
 
 
