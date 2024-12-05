@@ -201,9 +201,11 @@ Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3)
 
 **Amelioration du systeme de fragmentation des proteines predites**
 
-Pour ameliorer la fragmentation et reduire le temps de calcul il a fallu rajouter certaines contraintes au programme, la contrainte principale etant celle du plddt qui ne doit pas etre inferieur à 70, ensuite pour que un fragments puisse etre comptabilisé il lui faut au minimum 9 aa qui se suivent avec un score PLDDT>70, ensuite une marge d"erreur de 5aa est permise pour eviter de couper le fragments a cause de quelques acides aminé negligables, pour eviter de prendre en compte certaines region bien conservé qui peuvent posseder un score superier a 70, nous avons decider de garder des fragments qui ont au minimum 4 aa avec un plddt>90 ( ceci a été decidé apres avoir constaté que dans le domaine WD il y avait une presence de feuillet Beta qui avait un trés grand score).
+Pour améliorer la fragmentation et réduire le temps de calcul, il a été nécessaire d’ajouter certaines contraintes au programme. La contrainte principale est celle du pLDDT, qui ne doit pas être inférieur à 70. Ensuite, pour qu’un fragment puisse être comptabilisé, il doit contenir au minimum 9 acides aminés consécutifs avec un score pLDDT > 70. Une marge d’erreur de 5 acides aminés est permise afin d’éviter de couper les fragments à cause de quelques acides aminés négligeables.
 
-Pour tester la qualité de l'amelioration on va re-aligner les fragments de la proteine A0A1W2PR48 avec le 7bid, dans un premier temps on a reussi a diminuer le nombre de fragments à 2, et pour des scores de RMSD bien meilleurs:
+Pour éviter de prendre en compte certaines régions bien conservées qui pourraient présenter un score supérieur à 70, nous avons décidé de ne conserver que les fragments contenant au minimum 4 acides aminés avec un pLDDT > 90. Cette décision a été prise après avoir constaté que, dans le domaine WD, la présence de feuillets β affichait des scores très élevés.
+
+Pour tester la qualité de ces améliorations, nous allons réaligner les fragments de la protéine A0A1W2PR48 avec la structure 7BID. Dans un premier temps, nous avons réussi à réduire le nombre de fragments à 2, tout en obtenant des scores de RMSD nettement meilleurs.
 
 Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3):
 ![image](https://github.com/user-attachments/assets/051586c6-24cf-48f3-98ad-d67fec7c27cd)
@@ -245,13 +247,17 @@ Les résultats des superpositions étaient imparfaits et et encore améliorable 
 
 **Amelioration de la superposition des fragments au modele**
 
-L'amelioration de la fragmentation des proteines on permis une meilleur superposition generale, pour ameliorer encore mieux la superposition a son tour on a defini un taille minimale du fragment a superposer et augmenter le RMSD a 2,5 ( on pourrait encore l'augmenter d'aventage). Au lieu d'essayer de superposer touts les fragments de maniere parfaite pour toutes les proteines nous avons decider de compter sur la qualité que sur la quantité, pour cela nous avons regroupé les proteines en deux fichier distinct apres superposition, le premier regroupe les proteines qui ont au moins un fragments avec un RMSD <2,5, et un fichier qui regroupe des proteines qui n'ont aucun fragment avec un faible RMSD, cette sepration nous permet donc de travailler de maniere plus specfique et precise, les proteines qui n'ont pas de fragment avec un bon rmsd pourrait etre analysé manuellement.
+L’amélioration de la fragmentation des protéines a permis une meilleure superposition générale. Pour aller encore plus loin dans cette optimisation, nous avons défini une taille minimale des fragments à superposer et augmenté le seuil RMSD à 2,5 (ce seuil pourrait être augmenté davantage si nécessaire). Plutôt que de tenter de superposer parfaitement tous les fragments pour toutes les protéines, nous avons choisi de privilégier la qualité à la quantité. Ainsi, après la superposition, les protéines sont regroupées dans deux fichiers distincts :
+
+Un fichier regroupant les protéines ayant au moins un fragment avec un RMSD < 2,5.
+Un fichier regroupant les protéines n’ayant aucun fragment avec un faible RMSD.
+Cette séparation permet un travail plus spécifique et précis. Les protéines sans fragment avec un bon RMSD pourront être analysées manuellement.
 
 **Script Python utilisé (3.12.7) :Amelioration superposition.py**  
 
 **Annotation des domaines en fonction des fragments aligné**
 
-Apres avoir superposé les fragments et obtenu un fichier contenant les differents proteines et leurs fragments RMSD<2,5 nous avons pu alors essayer de regarder a quoi correspond le premier et le dernier acide aminé dans le fichier PDB de chaque fragment RMSD<2,5 pour savoir quelle regions ils couvrent sur leur proteine.On a ensuite essayé de contruire un graphique de "couverture de fragments".
+Après avoir superposé les fragments et obtenu un fichier contenant les différentes protéines et leurs fragments avec RMSD < 2,5, nous avons tenté d’identifier les acides aminés correspondant aux positions de début et de fin dans le fichier PDB de chaque fragment. Cela nous a permis de déterminer quelles régions de la protéine étaient couvertes. Par la suite, nous avons essayé de construire un graphique de "couverture de fragments".
 
 Les resulats de l'annotation sont les suivant:
 ![image](https://github.com/user-attachments/assets/9bb737c9-fffc-4fe6-900e-89b55c09a7e5)
@@ -338,7 +344,9 @@ A faire
 ---
 ## **Bloc 5 : Annotation des domaines complets predis par Alphafold **
 
-A fin d'avoir un meilleur appercu est de meilleurs resultats une autre approche serait d'isoler directement le domaine WD entier de chaque proteine, ceci va nous eviter des erreurs comme la technique de fragmentation par PLDDT qui incorpore des regions non structuré indesiré. Le but principal est de telechargé toutes les proteines presentes dans le fichier excel, a l'aide de leur id uniprot alpha fold predis leurs strcuture individuelle, ensuite on va effectuer directement une superposition des strcutures predites sur le modele de WD domain 7bid, on va ensuite calculer la distance de touts les atome set supprimer tout ceux qui ont une distance superieur a 5 A° du modele, ceci va nous permettre d'avoir un WD domain nottoyé et complet.
+Pour obtenir une meilleure vision d’ensemble et des résultats plus fiables, une autre approche consisterait à isoler directement le domaine WD entier pour chaque protéine. Cela éviterait les erreurs liées à la technique de fragmentation par pLDDT, qui inclut parfois des régions non structurées indésirables.
+
+L’objectif principal est de télécharger toutes les protéines présentes dans le fichier Excel à l’aide de leurs identifiants UniProt. Grâce à AlphaFold, nous obtiendrons les structures individuelles prédites. Nous effectuerons ensuite une superposition directe des structures prédites sur le modèle du domaine WD (7BID). Par la suite, nous calculerons les distances entre tous les atomes et éliminerons ceux ayant une distance supérieure à 5 Å par rapport au modèle. Cette méthode nous permettra d’obtenir un domaine WD nettoyé et complet.
 
 Le code python pour réalisé cette tache est le "Fragmentation_WD_domains_complets.py"
 
@@ -347,8 +355,14 @@ Le code python pour réalisé cette tache est le "Fragmentation_WD_domains_compl
 
 
 
-Apres avoir obtenu des fragments des proteines contenat seulement les domains WD complets pour chaque proteine on va essayer de trouver leur position dans la sequence des proteines a fin de comprendre la ou les domaines sont situé.
+Après avoir obtenu les fragments de protéines contenant uniquement les domaines WD complets pour chaque protéine, nous allons chercher à localiser précisément leur position dans la séquence de chaque protéine. Cette étape est cruciale pour mieux comprendre l’emplacement et la distribution des domaines WD au sein des séquences protéiques.
 
+Pour cela, nous utiliserons les coordonnées des fragments identifiés dans les fichiers PDB. Nous analyserons ces fichiers pour extraire les positions des acides aminés de début et de fin de chaque fragment correspondant à un domaine WD. Une fois ces positions déterminées, nous pourrons les mapper sur les séquences primaires des protéines initiales.
+
+Cette analyse permettra non seulement de localiser les domaines WD, mais également d’évaluer leur conservation et leur contexte structural. Par exemple, nous pourrons examiner si les domaines WD se situent préférentiellement dans certaines régions (N-terminal, C-terminal ou interne) et si leur position varie entre différentes protéines.
+
+
+Enfin, ces données pourront être visualisées sous forme de graphiques ou alignements, facilitant ainsi l’interprétation et la communication des résultats. Une étape ultérieure pourrait consister à explorer si des motifs spécifiques entourent ces domaines dans les séquences, ce qui pourrait indiquer des régions importantes pour leur stabilité ou leur fonction.
 Le code python pour réalisé cette tache est le "Positionnement_des_domaines_2.py"
 
 Le positionnement des domaines nous permet d'obtenir plusieurs information tels que la position moyenne de l'acide aminé initial/final, la taille et la correlation (position debut/fin)
@@ -357,13 +371,33 @@ Le code python pour réalisé cette tache est le "statistiques_domaines.py"
 
 ![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
 
-Une fois que nous avons obtenu et analysé les differents domaines WD, nous allons ensuite essayer d'aligner l'ensemble des sequences proteiques a fin de relever les differentes regoins ou motifs conservé entre domaines. Nous allons dans un premier cas transformer les fichiers pdb en fichiers fasta, ces fichiers vont etre concatené pour etre utilisé avec MAFFT afin de realiser un alignement multiple. L'affichage de l'alignement sera fait sur Jalview.
+Une fois les différents domaines WD obtenus et analysés, l’étape suivante consiste à aligner l’ensemble des séquences protéiques afin d’identifier les régions ou motifs conservés entre ces domaines. Cette analyse permettra de mieux comprendre les éléments structuraux et fonctionnels communs aux domaines WD étudiés.
+
+Dans un premier temps, nous convertirons les fichiers PDB en fichiers FASTA pour extraire les séquences protéiques correspondantes. Ces fichiers FASTA seront ensuite concaténés afin de constituer un fichier unique qui servira d’entrée pour MAFFT, un outil d’alignement multiple de séquences. MAFFT sera utilisé pour réaliser un alignement précis et robuste, capable de gérer les éventuelles variations ou divergences entre les séquences tout en mettant en évidence les régions hautement conservées.
+
+L’alignement multiple obtenu sera ensuite visualisé et analysé à l’aide de Jalview, un logiciel interactif permettant de visualiser les alignements et d’explorer les caractéristiques des séquences, telles que :
+
+La conservation des résidus importants.
+La présence de motifs spécifiques partagés entre les domaines WD.
 
 Dans un premier temps nous alons transformer les fichier PDB des differents domaines predis en fichier fasta.
 
 Le code python pour réalisé cette tache est  "pdb_fasta.py"
 
-Une fois le fichier fasta pour chaque proteine obtenu il va falloir concatener et reunier toutes les sequences dans un seul et meme fichier, ce fichier va etre ensuite donnée a MAFFT Online, l'utilisation du site MAFFT permet une meilleur familiarisation et est plus intuitif. Une fois le fichier avec les sequences concatené est televersé dans MAFFT nous allons avoir plusier resultats, il va faloir telechargé le fichier d'alignement pour le visualiser sur Jalview.
+
+Voici une version corrigée et enrichie de ton texte :
+
+Une fois les fichiers FASTA générés pour chaque protéine, l’étape suivante consiste à concaténer et regrouper toutes les séquences dans un seul fichier FASTA. Ce fichier combiné servira d’entrée pour MAFFT Online, une plateforme web intuitive qui facilite l’utilisation de l’outil d’alignement multiple, en particulier pour ceux qui souhaitent une prise en main rapide et efficace.
+
+Après avoir téléversé le fichier contenant les séquences concaténées sur le site MAFFT, plusieurs résultats d’alignement seront générés en fonction des paramètres choisis. Nous sélectionnerons le fichier d’alignement correspondant, qui devra ensuite être téléchargé pour une analyse plus approfondie.
+
+Ce fichier sera visualisé à l’aide de Jalview, un logiciel  permettant d’explorer les alignements multiples de séquences. Grâce à Jalview, nous pourrons :
+
+Identifier visuellement les régions conservées.
+Annoter les motifs partagés entre les domaines WD.
+
+
+Cette approche facilite non seulement l’analyse comparative mais offre également une transition fluide entre l’alignement en ligne (MAFFT) et les outils de visualisation et d’annotation (Jalview).
 
 Le code python pour réalisé cette tache est  "alignement.py"
 
@@ -371,7 +405,7 @@ Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque
 
 ![image](https://github.com/user-attachments/assets/98c9e252-2a4e-4d8c-88aa-56751fd73885)
 
-Nous pouvons voir sur l'ensemble de la sequence d'alignement plusieurs position ou la conservation des aa est tres fortes, les aa tres bien conservé sont les W et D qui des fois ont 90% de conservation
+En observant l’ensemble de la séquence d’alignement, plusieurs positions montrent une forte conservation des acides aminés. Parmi ces résidus, les tryptophanes (W) et les aspartates (D) se distinguent par leur haut niveau de conservation, atteignant parfois 90 % de similarité entre les séquences alignées.
 
 Logiciel utilisé : jalview (2.11.4.1)
 
