@@ -347,6 +347,7 @@ A faire
 Pour obtenir une meilleure vision d’ensemble et des résultats plus fiables, une autre approche consisterait à isoler directement le domaine WD entier pour chaque protéine. Cela éviterait les erreurs liées à la technique de fragmentation par pLDDT, qui inclut parfois des régions non structurées indésirables.
 
 **Telechargement et isolation des domaines complets**
+
 L’objectif principal est de télécharger toutes les protéines présentes dans le fichier Excel à l’aide de leurs identifiants UniProt. Grâce à AlphaFold, nous obtiendrons les structures individuelles prédites. Nous effectuerons ensuite une superposition directe des structures prédites sur le modèle du domaine WD (7BID). Par la suite, nous calculerons les distances entre tous les atomes et éliminerons ceux ayant une distance supérieure à 5 Å par rapport au modèle. Cette méthode nous permettra d’obtenir un domaine WD nettoyé et complet.
 
 Le code python pour réalisé cette tache est le **"Fragmentation_WD_domains_complets.py"**
@@ -356,6 +357,7 @@ Le code python pour réalisé cette tache est le **"Fragmentation_WD_domains_com
 
 
 **Positionnement des domaines sur les proteines**
+
 Après avoir obtenu les fragments de protéines contenant uniquement les domaines WD complets pour chaque protéine, nous allons chercher à localiser précisément leur position dans la séquence de chaque protéine. Cette étape est cruciale pour mieux comprendre l’emplacement et la distribution des domaines WD au sein des séquences protéiques.
 
 Pour cela, nous utiliserons les coordonnées des fragments identifiés dans les fichiers PDB. Nous analyserons ces fichiers pour extraire les positions des acides aminés de début et de fin de chaque fragment correspondant à un domaine WD. Une fois ces positions déterminées, nous pourrons les mapper sur les séquences primaires des protéines initiales.
@@ -368,6 +370,7 @@ Enfin, ces données pourront être visualisées sous forme de graphiques ou alig
 Le code python pour réalisé cette tache est le **"Positionnement_des_domaines_2.py"**
 
 **Analyse statistique**
+
 Le positionnement des domaines nous permet d'obtenir plusieurs information tels que la position moyenne de l'acide aminé initial/final, la taille et la correlation (position debut/fin)
 
 Le code python pour réalisé cette tache est le **"statistiques_domaines.py"**
@@ -375,6 +378,7 @@ Le code python pour réalisé cette tache est le **"statistiques_domaines.py"**
 ![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
 
 **Alignement multiple des sequences des domaines WD**
+
 Une fois les différents domaines WD obtenus et analysés, l’étape suivante consiste à aligner l’ensemble des séquences protéiques afin d’identifier les régions ou motifs conservés entre ces domaines. Cette analyse permettra de mieux comprendre les éléments structuraux et fonctionnels communs aux domaines WD étudiés.
 
 Dans un premier temps, nous convertirons les fichiers PDB en fichiers FASTA pour extraire les séquences protéiques correspondantes. Ces fichiers FASTA seront ensuite concaténés afin de constituer un fichier unique qui servira d’entrée pour MAFFT, un outil d’alignement multiple de séquences. MAFFT sera utilisé pour réaliser un alignement précis et robuste, capable de gérer les éventuelles variations ou divergences entre les séquences tout en mettant en évidence les régions hautement conservées.
