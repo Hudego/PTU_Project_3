@@ -7,3 +7,6 @@ matplotlib.pyplot: version 3.8.0
 collections.defaultdict: version 3.10
 concurrent.futures.ThreadPoolExecutor: version 3.10
 tqdm: version 4.66.1
+Plotly Express: version 5.16.1
+Numpy: 1.26.0
+shutil: version 3.12.7
