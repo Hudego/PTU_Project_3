@@ -1,0 +1,6 @@
+""
+voici le prompt utlilisé pour l'alignement mafft
+""
+version mafft=v7.526 (2024/Apr/26)
+
+mafft --anysymbol fragmentfasta2.fasta > mafft_frag_nettoyee.fasta
