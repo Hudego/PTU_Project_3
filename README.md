@@ -409,7 +409,7 @@ En observant l’ensemble de la séquence d’alignement, plusieurs positions mo
 
 Logiciel utilisé : jalview (2.11.4.1)
 
-**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entier, positionemment des domaines entier sur les sequences proteiques, analyse statistique pour relever les differentes limites, analyse et alignement multiple des sequences pour retrouver des motifs communs par Aiman LIMANI (28 novembre -3 decembre 2024). Creation des images des superposition par Ismail UNLU(1-3 décembre 2024)
+**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs par Aiman LIMANI ( 28 novembre - 3 décembre 2024), et création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
 
 
 ## **Bloc  : Alignement des séquences**
