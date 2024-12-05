@@ -75,7 +75,7 @@ def superposer_et_enregistrer_image(modele, dossier_fragments, output_dir, longu
 
     print(f"Les images ont été enregistrées dans le dossier '{output_dir}'.")
 
-modele = "/Users/unluismail/Downloads/7bid.pdb"  
+modele = "/Users/unluismail/Downloads/7bid_sans_h2o.pdb"  
 dossier_fragments = "/Users/unluismail/Downloads/Fragments_conformes"  
 output_dir = "image_superposition"  
 
