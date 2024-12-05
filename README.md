@@ -375,7 +375,7 @@ Nous pouvons voir sur l'ensemble de la sequence d'alignement plusieurs position 
 
 Logiciel utilisé : jalview (2.11.4.1)
 
-**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entier, positionemment des domaines entier sur les sequences proteiques, analyse statistique pour relever les differentes limites, analyse et alignement multiple des sequences pour retrouver des motifqs communs par Aiman LIMANI (25-3 decembre 2024). Creation des images des superposition par Ismail UNLU(1-3 décembre 2024)
+**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entier, positionemment des domaines entier sur les sequences proteiques, analyse statistique pour relever les differentes limites, analyse et alignement multiple des sequences pour retrouver des motifs communs par Aiman LIMANI (28 novembre -3 decembre 2024). Creation des images des superposition par Ismail UNLU(1-3 décembre 2024)
 
 
 ## **Bloc  : Alignement des séquences**
