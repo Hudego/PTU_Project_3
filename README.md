@@ -333,7 +333,7 @@ L'image complete est accessible dans nos dossiers.
 **Conclusion :**  
 A faire
 
-**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (22-25 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024)
+**Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (22-25 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024), Images des fragments générées, annotées et combinées par Unlu Ismail (22-26  Novembre 2024).
 
 ---
 ## **Bloc 5 : Annotation des domaines complets predis par Alphafold **
