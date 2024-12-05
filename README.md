@@ -385,7 +385,6 @@ Dans un premier temps nous alons transformer les fichier PDB des differents doma
 Le code python pour réalisé cette tache est  "pdb_fasta.py"
 
 
-Voici une version corrigée et enrichie de ton texte :
 
 Une fois les fichiers FASTA générés pour chaque protéine, l’étape suivante consiste à concaténer et regrouper toutes les séquences dans un seul fichier FASTA. Ce fichier combiné servira d’entrée pour MAFFT Online, une plateforme web intuitive qui facilite l’utilisation de l’outil d’alignement multiple, en particulier pour ceux qui souhaitent une prise en main rapide et efficace.
 
