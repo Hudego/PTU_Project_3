@@ -343,6 +343,8 @@ A fin d'avoir un meilleur appercu est de meilleurs resultats une autre approche 
 Le code python pour réalisé cette tache est le "Fragmentation_WD_domains_complets.py"
 
 **Superposition de nos fragments nettoyés sur le modèle**
+![Uploading image.png…]()
+
 
 
 Apres avoir obtenu des fragments des proteines contenat seulement les domains WD complets pour chaque proteine on va essayer de trouver leur position dans la sequence des proteines a fin de comprendre la ou les domaines sont situé.
