@@ -353,7 +353,7 @@ L’objectif principal est de télécharger toutes les protéines présentes dan
 Le code python pour réalisé cette tache est le **"Fragmentation_WD_domains_complets.py"**
 
 **Superposition de nos fragments nettoyés sur le modèle**
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/bf0fae32-c4b7-40ea-96f2-40dcd02144f7)
 
 
 **Positionnement des domaines sur les proteines**
@@ -413,6 +413,13 @@ Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque
 ![image](https://github.com/user-attachments/assets/98c9e252-2a4e-4d8c-88aa-56751fd73885)
 
 En observant l’ensemble de la séquence d’alignement, plusieurs positions montrent une forte conservation des acides aminés. Parmi ces résidus, les tryptophanes (W) et les aspartates (D) se distinguent par leur haut niveau de conservation, atteignant parfois 90 % de similarité entre les séquences alignées.
+
+![image](https://github.com/user-attachments/assets/aef44105-ae8a-41e2-a571-f4f99762d180)
+![image](https://github.com/user-attachments/assets/a2752e40-a330-4c43-b4c1-fbed16f1f98d)
+
+
+
+On observe également que les motifs conservés sont généralement espacés d'environ 60 à 70 acides aminés, ce qui correspond à la taille typique des répétitions WD. Cette observation suggère que les motifs WD sont localisés à la fin de chaque répétition, renforçant leur rôle clé dans la structure et la fonction des domaines WD.
 
 Logiciel utilisé : jalview (2.11.4.1)
 
