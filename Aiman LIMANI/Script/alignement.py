@@ -3,22 +3,7 @@ import os
 import sys
 
 def concatenate_fasta_files(input_folder, output_file=None):
-    """
-    Recherche tous les fichiers FASTA dans un dossier donné et les concatène en un seul fichier.
 
-    Parameters:
-    -----------
-    input_folder : str
-        Chemin vers le dossier contenant les fichiers FASTA.
-    output_file : str, optional
-        Chemin du fichier de sortie. 
-        Si non spécifié, un nom sera généré automatiquement.
-
-    Returns:
-    --------
-    str
-        Chemin du fichier FASTA concaténé.
-    """
     # Vérifier si le dossier existe
     if not os.path.isdir(input_folder):
         print(f"Erreur : Le dossier {input_folder} n'existe pas.")
