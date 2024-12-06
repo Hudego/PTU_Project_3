@@ -312,7 +312,7 @@ En modifiant quelques paramètres pour la fragmentaion et en rajoutant une centa
 ![Limiation](https://github.com/user-attachments/assets/6e2f6a8c-ea69-40a6-8028-02050f36a836)
 
 
-Pour définir la limite des fragments utilisable, nous avons regardés manuellement en superposant plusieurs fragments avec Pymol pour voir jusqu'ou les résultats étaient pertinent. Cette "frontière" pourrait encore être amélioré en utilisant un moyen plus automatique.
+Pour définir la limite des fragments utilisable, nous avons regardés manuellement en superposant plusieurs fragments avec Pymol pour voir jusqu'ou les résultats étaient pertinent. Cette "frontière" pourrait encore être amélioré en utilisant un moyen plus automatique. Nous pourrions par exemple mettre en œuvre une pipeline permettant d’établir des limites plus précises pour récupérer les fragments de notre scatterplot. Une approche envisageable serait d’utiliser des techniques de clustering, telles que le k-means ou DBSCAN pour analyser les données du scatterplot et regrouper les fragments conformes de manière plus précise. Ces algorithmes pourraient identifier des clusters correspondant aux fragments conformes en excluant automatiquement les fragments non pertinents
   
 On se retrouve donc avec **248 fragments** dans cette liste, retrouvable dans les dossiers "fragments conformes".
 
