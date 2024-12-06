@@ -342,7 +342,7 @@ A faire
 **Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (22-25 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024), Images des fragments générées, annotées et combinées par Unlu Ismail (22-26  Novembre 2024).
 
 ---
-## **Bloc 5 : Annotation des domaines complets predis par Alphafold **
+## **Bloc 5 : Annotation des domaines complets predis par Alphafold**
 
 Pour obtenir une meilleure vision d’ensemble et des résultats plus fiables, une autre approche consisterait à isoler directement le domaine WD entier pour chaque protéine. Cela éviterait les erreurs liées à la technique de fragmentation par pLDDT, qui inclut parfois des régions non structurées indésirables.
 
@@ -423,7 +423,7 @@ On observe également que les motifs conservés sont généralement espacés d'e
 
 Logiciel utilisé : jalview (2.11.4.1)
 
-**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs, annotation des motifs sur les sequences/structures des protéines  par Aiman LIMANI ( 28 novembre - 3 décembre 2024), et création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
+**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs, annotation des motifs sur les sequences/structures des protéines  par Aiman LIMANI ( 28 novembre - 3 décembre 2024) . Création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
 
 
 ## **Bloc  : Alignement des séquences**
