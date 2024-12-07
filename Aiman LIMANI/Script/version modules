@@ -3,10 +3,16 @@ Python: version 3.12.7
 Pandas: version 2.2.3
 Os: version 3.10
 pymol: version 2.5.0
-matplotlib.pyplot: version 3.8.0
 collections.defaultdict: version 3.10
-concurrent.futures.ThreadPoolExecutor: version 3.10
 tqdm: version 4.66.1
 Plotly Express: version 5.16.1
 Numpy: 1.26.0
 shutil: version 3.12.7
+os : Fait partie de la bibliothèque standard de Python, donc dépend de la version de Python.
+Bio.PDB :1.81.
+argparse : Bibliothèque standard de Python.
+matplotlib.pyplot : 3.8.2.
+csv : Module standard Python.
+requests : 2.31.0.
+concurrent.futures : Bibliothèque standard Python.
+tqdm : 4.67.1.
