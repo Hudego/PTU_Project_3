@@ -1,6 +1,10 @@
 """
 essaie non réussi car pas de WD dans l'alignement Mafft
+version:
+python: 3.12.7
+
 """
+
 from Bio.PDB import PDBParser  # Importer le module pour analyser les fichiers PDB.
 from Bio.Seq import Seq  # Pour manipuler des séquences biologiques.
 from Bio.SeqRecord import SeqRecord  # Pour représenter des séquences avec des métadonnées.
