@@ -178,12 +178,6 @@ Le programme a permis de générer un total de **2551 fragments** à partir de 2
 - **pandas** (version 2.2.3). Ce module sert à manipuler, analyser et transformer facilement des données.
 
 
-
-**Conclusion :**  
-
-Ce programme fournit une base solide pour l’analyse des fragments de protéines. Cependant, il nécessite une étape supplémentaire pour vérifier la qualité des fragments générés, en particulier pour confirmer leur pertinence par rapport aux domaines WD. 
-
-
 **Verification des fragments:**
 
 Pour avoir une première évaluation des fragments générés par notre script, nous avons decidé de superposer les 3 premiers fragments générés de notre liste (protéine A0A1W2PR48) avec notre domaine WD de reference (Protéine B2J0I0 et son domaine WD 7bid.)
@@ -214,6 +208,13 @@ Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3):
 - Alignement fragment 1: RMSD 0,867
 
 - Alignement fragment 2: RMSD 2.267
+
+**Conclusion**
+La création de notre librairie de fragments pour les protéines humaines contenant un domaine WD a permis de générer 2551 fragments à partir de 280 protéines en utilisant les structures prédictives d'AlphaFold. En fragmentant les protéines en fonction des scores pLDDT, nous avons isolé des régions structurées et fiables, tout en excluant les régions désordonnées.
+
+Les ajustements méthodologiques, tels que les seuils de pLDDT et les critères de longueur minimale des fragments, ont permis d’améliorer la qualité des fragments tout en réduisant leur nombre. L’évaluation des premiers fragments alignés avec le domaine WD de référence (structure 7BID) a montré une bonne superposition, avec des RMSD faibles (≤ 1.4 pour le meilleur fragment).
+
+Après optimisation, le système a généré des fragments encore plus précis, avec un RMSD réduit à 0.867 pour le meilleur alignement. 
 
 **Personnes ayant travaillé sur le bloc :** Création des fragments prédits en fonction des scores PLDDT par Aiman Limani (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024), Amélioration de la fragmentation des protéines réalisée par Aiman LIMANI (22-24  novembre 2024).
 
