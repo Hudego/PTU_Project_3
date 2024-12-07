@@ -373,6 +373,9 @@ Enfin, ces données pourront être visualisées sous forme de graphiques ou alig
 
 Le code python pour réalisé cette tache est le **(3.12.7) "Positionnement_des_domaines_2.py"** (Dossier/Aiman LIMANI/Script)
 
+![image](https://github.com/user-attachments/assets/17b794a4-eb5a-45ff-9ff6-0cbe3ec323e6)
+Meilleur apercu de l'image (Aiman LIMANI/Resultats/Position des domaine WD  ENTIER sur les proteines.png)
+
 **Analyse statistique**
 
 Le positionnement des domaines nous permet d'obtenir plusieurs information tels que la position moyenne de l'acide aminé initial/final, la taille et la correlation (position debut/fin)
