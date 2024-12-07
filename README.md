@@ -215,7 +215,7 @@ Screenshot de la superposition realisé avec le logiciel PyMOL (version 3.0.3):
 
 - Alignement fragment 2: RMSD 2.267
 
-**Personnes ayant travaillé sur le bloc :** Aiman Limani, Ismail Unlu (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024), Amelioration de la fragmentation des proteines realisé par Aiman LIMANI ( 22-24  novembre 2024).
+**Personnes ayant travaillé sur le bloc :** Creation des fragments predits en fonction des scores PLDDT par Aiman Limani (20-22 octobre 2024), modifications faites par Hugo Mutschler pour la verification des fragments (20-21 novembre 2024), Amelioration de la fragmentation des proteines realisé par Aiman LIMANI ( 22-24  novembre 2024).
 
 ---
 
