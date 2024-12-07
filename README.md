@@ -156,7 +156,7 @@ Récupérer les structures prédites par AlphaFold des protéines ayant un domai
 - Fragmentation des structures en fonction des valeurs de PLDDT pour générer des fragments de haute qualité.  
 - Création de fichiers individuels pour chaque fragment généré.
 
-**Script Python utilisé (3.12.7) : Fragments_WD.py**  
+**Script Python utilisé (3.12.7) : Fragments_WD.py** (Dossier/Aiman LIMANI/Script)
 
 
 **Informations supplémentaires:**
@@ -235,7 +235,7 @@ Superposer les fragments obtenus sur un modèle de beta-propeller afin de confir
    - Identification des fragments bien alignés avec un faible RMSD.  
    - Création d’un graphique représentant le nombre de fragments bien superposés par protéine.  
 
-**Script Python utilisé (3.12.7) :Superposition fragments-Modele.py**   
+**Script Python utilisé (3.12.7) :Superposition fragments-Modele.py**  (Dossier/Aiman LIMANI/Script)
   
 
 **Résultats observés :**  
@@ -253,7 +253,7 @@ Un fichier regroupant les protéines ayant au moins un fragment avec un RMSD < 2
 Un fichier regroupant les protéines n’ayant aucun fragment avec un faible RMSD.
 Cette séparation permet un travail plus spécifique et précis. Les protéines sans fragment avec un bon RMSD pourront être analysées manuellement.
 
-**Script Python utilisé (3.12.7) :Amelioration superposition.py**  
+**Script Python utilisé (3.12.7) :Amelioration superposition.py** (Dossier/Aiman LIMANI/Script)
 
 **Annotation des domaines en fonction des fragments aligné**
 
@@ -350,7 +350,7 @@ Pour obtenir une meilleure vision d’ensemble et des résultats plus fiables, u
 
 L’objectif principal est de télécharger toutes les protéines présentes dans le fichier Excel à l’aide de leurs identifiants UniProt. Grâce à AlphaFold, nous obtiendrons les structures individuelles prédites. Nous effectuerons ensuite une superposition directe des structures prédites sur le modèle du domaine WD (7BID). Par la suite, nous calculerons les distances entre tous les atomes et éliminerons ceux ayant une distance supérieure à 5 Å par rapport au modèle. Cette méthode nous permettra d’obtenir un domaine WD nettoyé et complet.
 
-Le code python pour réalisé cette tache est le **(3.12.7) "Fragmentation_WD_domains_complets.py"**
+Le code python pour réalisé cette tache est le **(3.12.7) "Fragmentation_WD_domains_complets.py"** (Dossier/Aiman LIMANI/Script)
 
 **Superposition de nos fragments nettoyés sur le modèle**
 
@@ -372,17 +372,17 @@ Cette analyse permettra non seulement de localiser les domaines WD, mais égalem
 
 Enfin, ces données pourront être visualisées sous forme de graphiques ou alignements, facilitant ainsi l’interprétation et la communication des résultats. Une étape ultérieure pourrait consister à explorer si des motifs spécifiques entourent ces domaines dans les séquences, ce qui pourrait indiquer des régions importantes pour leur stabilité ou leur fonction.
 
-Le code python pour réalisé cette tache est le **(3.12.7) "Positionnement_des_domaines_2.py"**
+Le code python pour réalisé cette tache est le **(3.12.7) "Positionnement_des_domaines_2.py"** (Dossier/Aiman LIMANI/Script)
 
 **Analyse statistique**
 
 Le positionnement des domaines nous permet d'obtenir plusieurs information tels que la position moyenne de l'acide aminé initial/final, la taille et la correlation (position debut/fin)
 
-Le code python pour réalisé cette tache est le **"statistiques_domaines.py"**
+Le code python pour réalisé cette tache est le **"statistiques_domaines.py"** (Dossier/Aiman LIMANI/Script)
 
 ![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
 
-**Alignement multiple des sequences des domaines WD**
+**Alignement multiple des sequences des domaines WD** (Dossier/Aiman LIMANI/Script)
 
 Une fois les différents domaines WD obtenus et analysés, l’étape suivante consiste à aligner l’ensemble des séquences protéiques afin d’identifier les régions ou motifs conservés entre ces domaines. Cette analyse permettra de mieux comprendre les éléments structuraux et fonctionnels communs aux domaines WD étudiés.
 
@@ -395,7 +395,7 @@ La présence de motifs spécifiques partagés entre les domaines WD.
 
 Dans un premier temps nous alons transformer les fichier PDB des differents domaines predis en fichier fasta.
 
-Le code python pour réalisé cette tache est  **(3.12.7) : "pdb_fasta.py"**
+Le code python pour réalisé cette tache est  **(3.12.7) : "pdb_fasta.py"** (Dossier/Aiman LIMANI/Script)
 
 
 
@@ -411,11 +411,12 @@ Annoter les motifs partagés entre les domaines WD.
 
 Cette approche facilite non seulement l’analyse comparative mais offre également une transition fluide entre l’alignement en ligne (MAFFT) et les outils de visualisation et d’annotation (Jalview).
 
-Le code python pour réalisé cette tache est  **(3.12.7) : "alignement.py"**
+Le code python pour réalisé cette tache est  **(3.12.7) : "alignement.py"** (Dossier/Aiman LIMANI/Script)
 
 Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque plusieurs points interessants:
 
 ![image](https://github.com/user-attachments/assets/98c9e252-2a4e-4d8c-88aa-56751fd73885)
+Visualiser le fichier su Jalview  (Dossier/Aiman LIMANI/Resulats/Alignement_saq_WD.fasta)
 
 En observant l’ensemble de la séquence d’alignement, plusieurs positions montrent une forte conservation des acides aminés. Parmi ces résidus, les tryptophanes (W) et les aspartates (D) se distinguent par leur haut niveau de conservation, atteignant parfois 90 % de similarité entre les séquences alignées.
 
