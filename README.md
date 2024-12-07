@@ -381,8 +381,9 @@ Le positionnement des domaines nous permet d'obtenir plusieurs information tels 
 Le code python pour réalisé cette tache est le **"statistiques_domaines.py"** (Dossier/Aiman LIMANI/Script)
 
 ![image](https://github.com/user-attachments/assets/0eff3169-a223-4cf3-b28a-91112ab54cbb)
+Voir fichier Dossier/Aiman LIMANI/Resultas/Statistiques des domaines.png pour une meilleur visibilité
 
-**Alignement multiple des sequences des domaines WD** (Dossier/Aiman LIMANI/Script)
+**Alignement multiple des sequences des domaines WD** 
 
 Une fois les différents domaines WD obtenus et analysés, l’étape suivante consiste à aligner l’ensemble des séquences protéiques afin d’identifier les régions ou motifs conservés entre ces domaines. Cette analyse permettra de mieux comprendre les éléments structuraux et fonctionnels communs aux domaines WD étudiés.
 
