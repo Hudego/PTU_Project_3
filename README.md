@@ -352,6 +352,7 @@ L’objectif principal est de télécharger toutes les protéines présentes dan
 Le code python pour réalisé cette tache est le **(3.12.7) "Fragmentation_WD_domains_complets.py"**
 
 **Superposition de nos fragments nettoyés sur le modèle**
+![image](https://github.com/user-attachments/assets/6bc5fb26-94a2-41ce-86a7-93451b2ed23e)
 
 
 
