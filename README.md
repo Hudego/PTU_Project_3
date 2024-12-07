@@ -427,6 +427,26 @@ On observe également que les motifs conservés sont généralement espacés d'e
 
 Logiciel utilisé : jalview (2.11.4.1)
 
+**Conclusion :**
+
+L'approche consistant à isoler et superposer les domaines WD complets prévus par AlphaFold s'est révélée plus fiable que la fragmentation basée sur le score pLDDT. En téléchargeant les structures complètes via leurs identifiants UniProt et en éliminant les régions non structurées ou éloignées du modèle de domaine WD, il a été possible d'améliorer la précision de l'annotation et de la localisation des domaines WD.
+
+Les analyses ont permis de :
+
+- Délimiter précisément les domaines WD complets au sein des protéines en se basant 
+  sur leurs coordonnées dans les fichiers PDB.
+  
+- Révéler que les domaines WD se trouvent généralement dans des régions spécifiques 
+  des protéines, souvent proches de l’extrémité N-terminale.
+  
+- Identifier des motifs conservés, tels que des tryptophanes (W) et des aspartates 
+  (D), répartis régulièrement dans les séquences alignées. Ces motifs correspondent 
+  aux répétitions WD typiques et confirment leur rôle clé dans la structure et la 
+  fonction du domaine.
+
+Les résultats obtenus ouvrent la voie à une meilleure compréhension de l’évolution et de la fonction des domaines WD dans les protéines analysées. Ils peuvent aussi aider à comprendre les l’interaction de ces domaines avec d’autres molécules ou protéines.
+
+
 **Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs, annotation des motifs sur les sequences/structures des protéines  par Aiman LIMANI ( 28 novembre - 3 décembre 2024) . Création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
 
 
