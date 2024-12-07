@@ -449,7 +449,7 @@ Les analyses ont permis de :
 Les résultats obtenus ouvrent la voie à une meilleure compréhension de l’évolution et de la fonction des domaines WD dans les protéines analysées. Ils peuvent aussi aider à comprendre les l’interaction de ces domaines avec d’autres molécules ou protéines.
 
 
-**Personne ayant travaillé sur le bloc :** Isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs, annotation des motifs sur les sequences/structures des protéines  par Aiman LIMANI ( 28 novembre - 3 décembre 2024) . Création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
+**Personne ayant travaillé sur le bloc :** téléchargment, superposition, isolation et fragmentation des domaines WD entiers, positionnement sur les séquences protéiques, analyse statistique des limites, alignement multiple pour identifier les motifs communs, annotation des motifs sur les sequences/structures des protéines  par Aiman LIMANI ( 28 novembre - 3 décembre 2024) . Création des images de superposition par Ismail UNLU (1 - 3 décembre 2024).
 
 
 ## **Bloc  : Alignement des séquences**
