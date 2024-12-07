@@ -336,7 +336,8 @@ L'image complete est accessible dans nos dossiers.
 
 
 **Conclusion :**  
-A faire
+
+L’approche de superposition des fragments sur un modèle de beta-propeller a permis de confirmer partiellement les annotations UniProt, avec des résultats encore perfectibles. En adaptant les paramètres de fragmentation (gap, longueur minimale des fragments, seuil RMSD), nous avons obtenu des graphiques plus clairs permettant de distinguer les fragments pertinents. Les fragments conformes (RMSD < 2,5 et >= 400 atomes alignés) ont été identifiés, mais l’analyse reste limitée pour les protéines contenant plusieurs domaines WD en raison de contraintes techniques. L’intégration d’algorithmes de clustering, comme k-means, pourrait améliorer l’automatisation et la précision des résultats. Malgré ces limites, cette méthodologie a permis d’affiner l’identification des domaines WD, suggérant leur localisation majoritaire en N-terminal, et a ouvert des perspectives pour des analyses plus détaillées.
 
 **Personne ayant travaillé sur le bloc :** Aiman Limani (1-5 novembre 2024), Hugo Mutschler (22-25 novembre 2024), Amelioration de la superposition et positionnement des domaines sur les sequences proteiques( pas toutes) par Aiman LIMANI ( 22-24 Novembre 2024), Images des fragments générées, annotées et combinées par Unlu Ismail (22-26  Novembre 2024).
 
