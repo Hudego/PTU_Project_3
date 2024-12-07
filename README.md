@@ -436,7 +436,7 @@ L'approche consistant à isoler et superposer les domaines WD complets prévus p
 Les analyses ont permis de :
 
 - Délimiter précisément les domaines WD complets au sein des protéines en se basant 
-  sur leurs coordonnées dans les fichiers PDB.
+  sur leurs coordonnées dans les fichiers PDB. (voir fichier Aiman LIMANI/Resultats/Debut et fin de chaque domaine par proteine.txt)
   
 - Révéler que les domaines WD se trouvent généralement dans des régions spécifiques 
   des protéines, souvent proches de l’extrémité N-terminale.
