@@ -350,7 +350,7 @@ Pour obtenir une meilleure vision d’ensemble et des résultats plus fiables, u
 
 L’objectif principal est de télécharger toutes les protéines présentes dans le fichier Excel à l’aide de leurs identifiants UniProt. Grâce à AlphaFold, nous obtiendrons les structures individuelles prédites. Nous effectuerons ensuite une superposition directe des structures prédites sur le modèle du domaine WD (7BID). Par la suite, nous calculerons les distances entre tous les atomes et éliminerons ceux ayant une distance supérieure à 5 Å par rapport au modèle. Cette méthode nous permettra d’obtenir un domaine WD nettoyé et complet.
 
-Le code python pour réalisé cette tache est le **"Fragmentation_WD_domains_complets.py"**
+Le code python pour réalisé cette tache est le **(3.12.7) "Fragmentation_WD_domains_complets.py"**
 
 **Superposition de nos fragments nettoyés sur le modèle**
 
@@ -367,7 +367,7 @@ Cette analyse permettra non seulement de localiser les domaines WD, mais égalem
 
 Enfin, ces données pourront être visualisées sous forme de graphiques ou alignements, facilitant ainsi l’interprétation et la communication des résultats. Une étape ultérieure pourrait consister à explorer si des motifs spécifiques entourent ces domaines dans les séquences, ce qui pourrait indiquer des régions importantes pour leur stabilité ou leur fonction.
 
-Le code python pour réalisé cette tache est le **"Positionnement_des_domaines_2.py"**
+Le code python pour réalisé cette tache est le **(3.12.7) "Positionnement_des_domaines_2.py"**
 
 **Analyse statistique**
 
@@ -390,7 +390,7 @@ La présence de motifs spécifiques partagés entre les domaines WD.
 
 Dans un premier temps nous alons transformer les fichier PDB des differents domaines predis en fichier fasta.
 
-Le code python pour réalisé cette tache est  **"pdb_fasta.py"**
+Le code python pour réalisé cette tache est  **(3.12.7) : "pdb_fasta.py"**
 
 
 
@@ -406,7 +406,7 @@ Annoter les motifs partagés entre les domaines WD.
 
 Cette approche facilite non seulement l’analyse comparative mais offre également une transition fluide entre l’alignement en ligne (MAFFT) et les outils de visualisation et d’annotation (Jalview).
 
-Le code python pour réalisé cette tache est  **"alignement.py"**
+Le code python pour réalisé cette tache est  **(3.12.7) : "alignement.py"**
 
 Une fois sur Jalview nous pouvons analyser l'alignement dans le quel on remarque plusieurs points interessants:
 
