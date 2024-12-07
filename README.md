@@ -355,6 +355,7 @@ Le code python pour réalisé cette tache est le **(3.12.7) "Fragmentation_WD_do
 **Superposition de nos fragments nettoyés sur le modèle**
 
 ![image](https://github.com/user-attachments/assets/6bc5fb26-94a2-41ce-86a7-93451b2ed23e)
+
 (image complète sur le dossier "Résultats" dans la partie de Ismail)
 
 Nous constatons sur cette image que la nouvelle approche semble être plus efficace pour la délimitation des domaines. En effet, il y a une nette amélioration sur la superposition des fragments sur le modèle 7bid. Cette image nous donne une idée générale de la qualité de ma fragmentation de nos protéines et, permet de nous rapprocher de plus en plus vers notre objectif qui est de trouver la limite des différents domaines appartenant aux différentes protéines données.
