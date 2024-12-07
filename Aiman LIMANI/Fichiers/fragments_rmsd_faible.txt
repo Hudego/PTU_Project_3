@@ -1,4 +1,4 @@
-Protéine	Fragment	RMSD
+ProtÃ©ine	Fragment	RMSD
 A2RRH5	A2RRH5_fragment_1	2.22
 A2RRH5	A2RRH5_fragment_4	0.69
 A2RRP1	A2RRP1_fragment_3	0.39
