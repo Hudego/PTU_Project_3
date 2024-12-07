@@ -1,3 +1,8 @@
+"""
+python version: 3.8.20
+"""
+
+
 import os
 from pymol import cmd
 
