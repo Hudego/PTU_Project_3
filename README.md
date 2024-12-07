@@ -267,9 +267,7 @@ Les resulats de l'annotation sont les suivant:
 On remarque une region hyper representé entre la position N-terminale de la proteine et les position 500aa.
 Voir fichier "image_position_1" pour une meilleur visibilité
 
-**Conclusion:**
 
-Après avoir superposé et annoté les fragments alignés sur les séquences de leurs protéines, on peut supposer que le domaine WD se situe généralement dans la région N-terminale des protéines. Cependant, cette analyse n'est pas exhaustive et nécessite des améliorations, notamment en tenant compte de la taille de chaque protéine de manière différente.
 
 Nous nous intéressons ensuite aux fragments ayant un RMSD faible et un nombre conséquent d'atomes alignés. Pour ce faire, nous modifions légèrement notre script d'alignement en utilisant Matplotlib pour générer un scatterplot et calculer le RMSD avec PyMOL. Nous utilisons le log(RMSD) pour une meilleure visualisation des points, car cela permet de mieux faire ressortir les fragments intéressants sur notre graphique. Cette proposition nous a été faite par notre tuteur de projet, Goran Bich. Dans cet exemple, nous conservons uniquement les fragments ayant une longueur minimale de 50 acides aminés.
 
